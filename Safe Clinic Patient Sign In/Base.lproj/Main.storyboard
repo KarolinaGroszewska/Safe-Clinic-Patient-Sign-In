@@ -144,7 +144,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sWM-VK-JYQ">
-                                        <rect key="frame" x="-93" y="-88" width="760" height="1016"/>
+                                        <rect key="frame" x="-391" y="4" width="760" height="1016"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
                                 </subviews>
