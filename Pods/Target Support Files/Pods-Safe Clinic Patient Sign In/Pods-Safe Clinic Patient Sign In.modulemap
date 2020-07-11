@@ -1,0 +1,6 @@
+framework module Pods_Safe_Clinic_Patient_Sign_In {
+  umbrella header "Pods-Safe Clinic Patient Sign In-umbrella.h"
+
+  export *
+  module * { export * }
+}
