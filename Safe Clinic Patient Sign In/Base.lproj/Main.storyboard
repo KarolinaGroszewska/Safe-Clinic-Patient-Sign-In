@@ -164,6 +164,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <viewLayoutGuide key="safeArea" id="BYc-Xr-ryH"/>
                     </view>
                     <navigationItem key="navigationItem" id="XQ6-iU-59r"/>
+                    <connections>
+                        <outlet property="imageView" destination="Yve-5u-rPU" id="Fbg-6f-EZK"/>
+                        <outlet property="scrollView" destination="MtD-w4-EDr" id="CYh-Av-cms"/>
+                        <outlet property="stackView" destination="sWM-VK-JYQ" id="BhE-KS-tkQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izY-jK-hOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1452,7 +1457,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sAr-5y-sGI"/>
-        <segue reference="2M0-vv-4Oo"/>
+        <segue reference="SKB-XK-zap"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="sac-logo" width="148" height="123"/>
