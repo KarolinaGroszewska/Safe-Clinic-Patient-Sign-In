@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upg-fu-Cuw" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
-                                <rect key="frame" x="48" y="554" width="318" height="159"/>
+                                <rect key="frame" x="20" y="554" width="346" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.10980392156862745" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUV-ox-myu" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
-                                <rect key="frame" x="388" y="554" width="318" height="159"/>
+                                <rect key="frame" x="403" y="554" width="345" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
@@ -63,18 +63,8 @@
                                     <segue destination="g8w-ke-QsT" kind="show" id="5Pe-HA-lw6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N4-m8-Jrg">
-                                <rect key="frame" x="101" y="390" width="566" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This app will guide you through the completion of the SAC introductory forms, please choose your preferred language.
-
-Esta aplicación lo guiará a través de la finalización de los formularios introductorios de la SAC. Por favor elija su idioma preferido.</string>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Sexual Assault Center!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABq-gu-KYb">
-                                <rect key="frame" x="63" y="309" width="643" height="40"/>
+                                <rect key="frame" x="63" y="293" width="643" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="34"/>
                                 <nil key="textColor"/>
@@ -84,10 +74,21 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N4-m8-Jrg">
+                                <rect key="frame" x="101" y="372" width="566" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This app will guide you through the completion of the SAC introductory forms, please choose your preferred language.
+
+Esta aplicación lo guiará a través de la finalización de los formularios introductorios de la SAC. Por favor elija su idioma preferido.</string>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hvf-82-vqH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,31 +102,72 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vln-Lw-FM1">
-                                <rect key="frame" x="100" y="83" width="182" height="70"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="t8h-RV-BJU">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clinic"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIH-30-1Ld" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="52" y="493" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
+                                <state key="normal" title="Agency Visit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="P0b-6R-ysc" kind="show" id="59g-rj-Lf4"/>
+                                    <segue destination="jQD-JF-Mdo" kind="show" id="mgr-iP-kKc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVa-30-o0J">
-                                <rect key="frame" x="100" y="521" width="182" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kb7-6V-UFy" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="398" y="492" width="318" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Agency"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
+                                <state key="normal" title="Clinic Visit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="jQD-JF-Mdo" kind="show" id="AaS-B5-fQs"/>
+                                    <segue destination="P0b-6R-ysc" kind="show" id="44Q-3T-44y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please click the button below that best represents the purpose of your visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2H-H5-eAf">
+                                <rect key="frame" x="189" y="259" width="390" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="y1V-fP-BxA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i6P-7C-oO0"/>
+                    <navigationItem key="navigationItem" id="iEK-6P-Ss3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pak-yJ-yRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-785"/>
+            <point key="canvasLocation" x="901.5625" y="-785.15625"/>
         </scene>
         <!--Clinic Form English View Controller-->
         <scene sceneID="LT9-8X-Vu1">
@@ -156,7 +198,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="clinic form "/>
                                 <connections>
-                                    <segue destination="6Kx-Rw-mE9" kind="show" id="rJY-vo-VK1"/>
+                                    <segue destination="K2l-cU-bQW" kind="show" id="HRX-8e-Tbl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,31 +211,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
             </objects>
             <point key="canvasLocation" x="1662" y="-1540"/>
         </scene>
-        <!--Clinic Completion English View Controller-->
-        <scene sceneID="rwL-Sg-P5A">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6Kx-Rw-mE9" customClass="ClinicCompletionEnglishViewController" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="24A-2X-ODy">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email and save info, thank you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-PP-lfm">
-                                <rect key="frame" x="269" y="297" width="230" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="gNI-4c-ANt"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="g0B-iS-pd8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IHE-2s-zEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2480" y="-1540"/>
-        </scene>
         <!--Clinic Agency View Spanish View Controller-->
         <scene sceneID="Mpf-7o-h17">
             <objects>
@@ -202,22 +219,63 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-9S-YC0">
-                                <rect key="frame" x="97" y="201" width="182" height="70"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Jcg-Y7-L3J">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="spanish clinic"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcV-Hp-kix" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="52" y="493" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Visita para clínica">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ge2-Nf-JXo" kind="show" id="u07-11-y5V"/>
+                                    <segue destination="Ge2-Nf-JXo" kind="show" id="SMY-JX-Pfr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCr-Cs-pQA">
-                                <rect key="frame" x="97" y="639" width="182" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-WS-ufn" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="398" y="492" width="318" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="spanish agency"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Visita para agencia">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="4Ax-41-MCW" kind="show" id="4cL-TW-9we"/>
+                                    <segue destination="4Ax-41-MCW" kind="show" id="UWf-na-pdX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Por favor, elija la opción que representa la intencion de su visita." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6j-C1-Gz8">
+                                <rect key="frame" x="165" y="261" width="439" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Qga-Uk-1UT"/>
@@ -226,7 +284,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02T-zz-sOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="1209"/>
+            <point key="canvasLocation" x="937.5" y="1208.7890625"/>
         </scene>
         <!--Clinic Form Spanish View Controller-->
         <scene sceneID="ra1-QX-2JK">
@@ -256,9 +314,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <rect key="frame" x="268" y="497" width="232" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="clinic form "/>
-                                <connections>
-                                    <segue destination="K2l-cU-bQW" kind="show" id="IBY-Uj-nsV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -283,25 +338,65 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FA7-cd-YCH">
-                                <rect key="frame" x="293" y="227" width="182" height="70"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-y6-3lu">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Agency for adults"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCF-u0-Luy" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="52" y="493" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
+                                <state key="normal" title="Child Visit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="6Qf-Cv-xCm" kind="show" id="hUG-yZ-ezx"/>
+                                    <segue destination="t6i-g2-ycE" kind="show" id="bBu-OC-Org"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0O-fg-LDf">
-                                <rect key="frame" x="314" y="570" width="182" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTB-K2-Ga3" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="398" y="492" width="318" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Agency for kids"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
+                                <state key="normal" title="Adult Visit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="t6i-g2-ycE" kind="show" id="YNa-ns-9YX"/>
+                                    <segue destination="6Qf-Cv-xCm" kind="show" id="ucK-Zb-1R0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please click the button below that best represents the purpose of your visit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-Cx-Djv">
+                                <rect key="frame" x="189" y="263" width="390" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aqm-d4-c3D"/>
                     </view>
                     <navigationItem key="navigationItem" id="yUA-la-UDo"/>
@@ -318,22 +413,63 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bx-I2-hol">
-                                <rect key="frame" x="283" y="306" width="182" height="70"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kFa-Ko-KoY">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Agency for adults"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-uh-5kk" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="52" y="493" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="36"/>
+                                <state key="normal" title="Visita para niño">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="VcQ-Qk-QcI" kind="show" id="jg2-0l-kg6"/>
+                                    <segue destination="TuO-js-LX0" kind="showDetail" id="nhX-yh-enG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZw-Ag-gZB">
-                                <rect key="frame" x="304" y="649" width="182" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh9-wH-tp3" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="398" y="492" width="318" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Agency for kids"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="36"/>
+                                <state key="normal" title="Visita para adult">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="TuO-js-LX0" kind="show" id="stB-Oa-Xz2"/>
+                                    <segue destination="VcQ-Qk-QcI" kind="show" id="Djz-cN-Y27"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Por favor, elija la opción que representa la intencion de su visita." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-NZ-vSy">
+                                <rect key="frame" x="165" y="261" width="439" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pQR-qu-vaH"/>
@@ -411,6 +547,10 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="8" width="760" height="1016"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uyn-rH-sRE">
+                                        <rect key="frame" x="10" y="18" width="760" height="1016"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y84-Jx-m45"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bUi-z6-AVv"/>
@@ -420,7 +560,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="to form 2"/>
                                 <connections>
-                                    <segue destination="cQG-cm-Dz5" kind="show" id="2M0-vv-4Oo"/>
+                                    <segue destination="cQG-cm-Dz5" kind="show" id="8PX-MA-QCC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -795,9 +935,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <rect key="frame" x="204" y="307" width="360" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="form 10"/>
-                                <connections>
-                                    <segue destination="Zne-XH-5q6" kind="show" id="YO2-yj-xSW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -813,29 +950,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOY-Kc-kYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8436" y="-277"/>
-        </scene>
-        <!--Agency Completion English Controller-->
-        <scene sceneID="ue1-bZ-GgC">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Zne-XH-5q6" customClass="AgencyCompletionEnglishController" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q3X-mD-Xko">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-DI-Hh0">
-                                <rect key="frame" x="204" y="289" width="360" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="back to start, thank you, emaul"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="UwX-dx-udL"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rcl-G1-v2f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B7P-OT-Ten" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9098" y="-277"/>
         </scene>
         <!--Agency Form Two Spanish View Controller-->
         <scene sceneID="gQJ-vA-5Hl">
@@ -1194,9 +1308,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <rect key="frame" x="204" y="307" width="360" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="form 10"/>
-                                <connections>
-                                    <segue destination="6W9-t1-yUo" kind="show" id="48G-0a-zKK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1212,29 +1323,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2J-LJ-VKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8436" y="1959"/>
-        </scene>
-        <!--Agency Completion Spanish View Controller-->
-        <scene sceneID="Fhs-Ti-SxH">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6W9-t1-yUo" customClass="AgencyCompletionSpanishViewController" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wtz-x6-xZ3">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz0-iJ-tVY">
-                                <rect key="frame" x="204" y="289" width="360" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="back to start, thank you, emaul"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="t2J-ER-em5"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="WPG-Hp-fDv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4RG-QH-gJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9098" y="1959"/>
         </scene>
         <!--Agency Form Four English View Controller-->
         <scene sceneID="y3i-RV-NGU">
@@ -1424,21 +1512,54 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
             </objects>
             <point key="canvasLocation" x="2452" y="1494"/>
         </scene>
-        <!--Clinic Completion Spanish View Controller-->
+        <!--Clinic Completion English View Controller-->
         <scene sceneID="y4x-oT-Nuv">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="K2l-cU-bQW" customClass="ClinicCompletionSpanishViewController" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="K2l-cU-bQW" customClass="ClinicCompletionEnglishViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9oj-nX-4kc">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email and save info, thank you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuZ-ms-vw4">
-                                <rect key="frame" x="269" y="297" width="230" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4sD-pP-vM5">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email address:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0K-FL-bOy">
+                                <rect key="frame" x="170" y="429" width="429" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you, a copy of your forms will be emailed to the email address you enter below." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrZ-rZ-Ksl">
+                                <rect key="frame" x="192" y="273" width="384" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ecW-LG-Nei" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="225" y="567" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KuC-pn-Ule"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OpK-yq-tS7"/>
@@ -1447,12 +1568,187 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7H-ko-Nou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="826"/>
+            <point key="canvasLocation" x="2480" y="-1540"/>
+        </scene>
+        <!--Clinic Completion English View Controller-->
+        <scene sceneID="Yzz-2O-WiB">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="6Li-T6-3FK" customClass="ClinicCompletionEnglishViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7pY-SJ-lNX">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="SO1-GQ-wQK">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email address:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8IQ-fT-Zaz">
+                                <rect key="frame" x="170" y="429" width="429" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you, a copy of your forms will be emailed to the email address you enter below." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lb-Mp-9Yh">
+                                <rect key="frame" x="192" y="273" width="384" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bA0-Qw-VVX" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="225" y="567" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="unx-XW-2fY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NmT-Oe-HFc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DYc-XJ-GnX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CX-eb-Rex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9073" y="-277"/>
+        </scene>
+        <!--Clinic Completion English View Controller-->
+        <scene sceneID="l2R-hv-877">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="7Mn-U3-KfI" customClass="ClinicCompletionEnglishViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2he-Ya-GQL">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="eS1-0D-OkF">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Por favor, introduzca su dirección de correo electrónico:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-s9-CWp">
+                                <rect key="frame" x="170" y="429" width="429" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="668-LK-dYz" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="225" y="567" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Terminando">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Gqs-Xr-Uzg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gracias, se enviará una copia de sus formas a la dirección de correo electrónico que se proporciona a continuación." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAt-Tq-gVb">
+                                <rect key="frame" x="84" y="251" width="600" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1up-cq-x0r"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JlJ-2B-Z9C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogu-BG-5hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9090.625" y="1958.7890624999998"/>
+        </scene>
+        <!--Clinic Completion English View Controller-->
+        <scene sceneID="AYR-yY-jJ9">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="WeK-FP-E1z" customClass="ClinicCompletionEnglishViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jc7-8X-g21">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lbm-Dm-8g0">
+                                <rect key="frame" x="272" y="20" width="225" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Por favor, introduzca su dirección de correo electrónico:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-7e-DOY">
+                                <rect key="frame" x="170" y="429" width="429" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-Df-V2c" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                <rect key="frame" x="225" y="567" width="318" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="32"/>
+                                <state key="normal" title="Terminando">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zKc-og-f0t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gracias, se enviará una copia de sus formas a la dirección de correo electrónico que se proporciona a continuación." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD4-Mb-pA6">
+                                <rect key="frame" x="122" y="262" width="525" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b9c-Um-IJG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l0E-pu-gju"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfD-An-RXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.6875" y="800.9765625"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="sAr-5y-sGI"/>
-        <segue reference="2M0-vv-4Oo"/>
+        <segue reference="8PX-MA-QCC"/>
+        <segue reference="zKc-og-f0t"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="sac-logo" width="148" height="123"/>
