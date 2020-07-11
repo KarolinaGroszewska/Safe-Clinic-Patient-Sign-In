@@ -8,15 +8,59 @@
 
 import UIKit
 import Firebase
+import MessageUI
 
-class ClinicFormEnglishViewController: UIViewController {
+class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
+    var ref: DatabaseReference!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
+        ref = Database.database().reference()
+        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": "Date",
+                                                             "First Name": "Name",
+                                                             "Last Name":"Name",
+                                                             "Gender":"Gender",
+                                                             "Preferred Pronouns": "They/Them",
+                                                             "Street Adress": "Street Address",
+                                                             "City":"City", "State":"State",
+                                                             "Zip":"Zip",
+                                                             "Phone":"Phone",
+                                                             "Birthday":"Birthday",
+                                                             "Age":"Age",
+                                                             "Race/Ethnicity":"Race",
+                                                             "SSN":"SSN",
+                                                             "Assault Date": "Date",
+                                                             "Assault City/State": "City, State",
+                                                             "Emergency Contact": "Emergency Contact",
+                                                             "Emergency Phone":"Phone"])
+    
+        
+//        func sendEmail() {
+//            if MFMailComposeViewController.canSendMail() {
+//                let mail = MFMailComposeViewController()
+//                mail.mailComposeDelegate = self
+//                mail.setToRecipients(["smsliman@aol.com"])
+//                mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+//
+//                present(mail, animated: true)
+//                print("not an error")
+//            } else {
+//                print("error")
+//                // show failure alert
+//            }
+//        }
+//
+//        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+//            controller.dismiss(animated: true)
+//        }
+//        sendEmail()
+        
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
 
