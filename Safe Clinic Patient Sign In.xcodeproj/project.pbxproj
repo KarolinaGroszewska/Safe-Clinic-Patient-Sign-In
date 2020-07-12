@@ -46,6 +46,7 @@
 		4A36612624B9616500BAA48F /* AgencyFormNineSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36612524B9616500BAA48F /* AgencyFormNineSpanishViewController.swift */; };
 		4A36612824B9617300BAA48F /* AgencyFormTenSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36612724B9617300BAA48F /* AgencyFormTenSpanishViewController.swift */; };
 		4A36612A24B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36612924B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift */; };
+		4A526F5224BA918F005DA9D1 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5124BA918F005DA9D1 /* SignatureView.swift */; };
 		8520A25624BA54B00051BCA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */; };
 		AD11834324B98E0C001DF0CF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11834224B98E0C001DF0CF /* RoundButton.swift */; };
 		AD80723B24BA5218007B2972 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD80722924BA5218007B2972 /* Raleway-Italic.ttf */; };
@@ -111,6 +112,7 @@
 		4A36612524B9616500BAA48F /* AgencyFormNineSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormNineSpanishViewController.swift; sourceTree = "<group>"; };
 		4A36612724B9617300BAA48F /* AgencyFormTenSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormTenSpanishViewController.swift; sourceTree = "<group>"; };
 		4A36612924B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyCompletionSpanishViewController.swift; sourceTree = "<group>"; };
+		4A526F5124BA918F005DA9D1 /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 		6D0638FBBBF7A0126CCF0A7D /* Pods_Safe_Clinic_Patient_Sign_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_Clinic_Patient_Sign_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD11834224B98E0C001DF0CF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				4A3660D524B9390100BAA48F /* SceneDelegate.swift */,
 				4A3660D924B9390100BAA48F /* Main.storyboard */,
 				AD11834224B98E0C001DF0CF /* RoundButton.swift */,
+				4A526F5124BA918F005DA9D1 /* SignatureView.swift */,
 				4A3660D724B9390100BAA48F /* ViewController.swift */,
 				4A3660E924B95EC200BAA48F /* ClinicAgencyMenuEnglishViewController.swift */,
 				4A3660EB24B95EE300BAA48F /* ClinicFormEnglishViewController.swift */,
@@ -394,6 +397,7 @@
 				4A36610024B95FDC00BAA48F /* AgencyFormSixEnglishViewController.swift in Sources */,
 				4A36610624B9600D00BAA48F /* AgencyFormNineEnglishViewController.swift in Sources */,
 				4A36612024B9613500BAA48F /* AgencyFormSixSpanishViewController.swift in Sources */,
+				4A526F5224BA918F005DA9D1 /* SignatureView.swift in Sources */,
 				4A36611A24B9610400BAA48F /* AgencyFormThreeSpanishViewController.swift in Sources */,
 				4A3660F424B95F6700BAA48F /* AgencyChildFormEnglishViewController.swift in Sources */,
 				4A36610A24B9603400BAA48F /* AgencyCompletionEnglishController.swift in Sources */,
