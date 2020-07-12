@@ -252,7 +252,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="XQ6-iU-59r"/>
                     <connections>
-                        <outlet property="SubmitButton" destination="ehD-db-hKz" id="65i-N5-9K0"/>
                         <outlet property="imageView" destination="Yve-5u-rPU" id="Fbg-6f-EZK"/>
                         <outlet property="scrollView" destination="MtD-w4-EDr" id="CYh-Av-cms"/>
                         <outlet property="signatureView" destination="uQK-l8-AaT" id="NAH-Qo-vOz"/>
