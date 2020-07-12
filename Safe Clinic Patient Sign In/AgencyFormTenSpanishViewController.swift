@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AgencyFormTenSpanishViewController: UIViewController {
+class AgencyFormTenSpanishViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var signatureView: SignatureView!
@@ -28,12 +28,33 @@ class AgencyFormTenSpanishViewController: UIViewController {
         scrollView.addSubview(signatureView)
         scrollView.bringSubviewToFront(imageView)
         scrollView.bringSubviewToFront(signatureView)
+        
+        let firstField:UITextField = {
+            let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
+            textField.translatesAutoresizingMaskIntoConstraints = false
+            textField.placeholder = "First Name"
+            textField.keyboardType = UIKeyboardType.default
+            textField.returnKeyType = UIReturnKeyType.done
+            textField.autocorrectionType = UITextAutocorrectionType.no
+            textField.font = UIFont.systemFont(ofSize: 13)
+            textField.borderStyle = UITextField.BorderStyle.roundedRect
+            textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+            textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+            return textField
+        }()
+        firstField.delegate = self
+        scrollView.addSubview(firstField)
+        scrollView.bringSubviewToFront(firstField)
               }
               
               func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
               {
                    return imageView
               }
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           return true
+        }
     
 
     /*
