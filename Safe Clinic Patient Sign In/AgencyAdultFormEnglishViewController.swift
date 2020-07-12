@@ -12,11 +12,12 @@ import Firebase
 class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var SubmitButton: RoundButton!
     var dict: [String: String] = [:]
+    var ref: DatabaseReference!
    
     @IBOutlet weak var signatureView: SignatureView!
     
-    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
          scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
@@ -186,54 +187,53 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         func textFieldDidChangeSelection(_ textField: UITextField) {
            dict[textField.placeholder ?? ""] = textField.text ?? ""
        }
-    
-//    func {
-//    ref = Database.database().reference()
-//    self.ref.child("AgencyPatientsAdult").childByAutoId().setValue(["Preferred Name": Preferred_Name,
-//                                                                 "First Name": First_Name,
-//                                                                 "Last Name": Last_Name,
-//                                                                 "Middle Name": Middle_Name,
-//                                                                 "Former Name":  Former_Name,
-//                                                                 "Birth Day": Birth_Day,
-//                                                                 "Birth Month": Birth_Month,
-//                                                                 "Birth Year": Birth_Year,
-//                                                                 "Age": Age,
-//                                                                 "Sex": Sex,
-//                                                                 "Gender": Gender,
-//                                                                 "Relationship Status": Relationship_Status,
-//                                                                 "Race" : Race,
-//                                                                 "Ethnicity" : Ethnicity,
-//                                                                 "Street Address": Street_Address,
-//                                                                 "City": City,
-//                                                                 "State": State,
-//                                                                 "Zip": Zip,
-//                                                                 "SSN": SSN,
-//                                                                 "County": County,
-//                                                                 "Davidson": Davidson,
-//                                                                 "Cell": Cell,
-//                                                                 "Occupation": Occupation,
-//                                                                 "Employer": Employer,
-//                                                                 "Employer Phone": Employer_Phone,
-//                                                                 "Preferred Contact": Preferred_Contact,
-//                                                                 "Email": Email,
-//                                                                 "Primary Insurance": Primary_Insurance,
-//                                                                 "Primary Member ID": Primary_Member_ID,
-//                                                                 "Primary Member Name": Primary_Member_Name,
-//                                                                 "Primary Member SSN": Primary_Member_SSN,
-//                                                                 "Primary Member DOB": Primary_Member_DOB,
-//                                                                 "Secondary Insurance": Secondary_Insurance,
-//                                                                 "Secondary Member ID": Secondary_Member_ID,
-//                                                                 "Primary Care Physician": Primary_Care_Physician,
-//                                                                 "Physician Contact": Physician_Contact,
-//                                                                 "Household Income": Household_Income,
-//                                                                 "Number in Household": Number_in_Household,
-//                                                                 "Heard About": Heard_About,
-//                                                                 "Emergency Name": Emergency_Name,
-//                                                                 "Emergency Relationship": Emergency_Relationship,
-//                                                                 "Emergency Home Phone": Emergency_Home_Phone,
-//                                                                 "Emergency Cell Phone": Emergency_Cell_Phone,
-//                                                                 "Date": Date])
-//    }
+    @IBAction func onSubmit(_ sender: Any) {
+        ref = Database.database().reference()
+//            self.ref.child("AgencyPatientsAdult").childByAutoId().setValue(["Preferred Name": Preferred_Name,
+//                                                                         "First Name": First_Name,
+//                                                                         "Last Name": Last_Name,
+//                                                                         "Middle Name": Middle_Name,
+//                                                                         "Former Name":  Former_Name,
+//                                                                         "Birth Day": Birth_Day,
+//                                                                         "Birth Month": Birth_Month,
+//                                                                         "Birth Year": Birth_Year,
+//                                                                         "Age": Age,
+//                                                                         "Sex": Sex,
+//                                                                         "Gender": Gender,
+//                                                                         "Relationship Status": Relationship_Status,
+//                                                                         "Race" : Race,
+//                                                                         "Ethnicity" : Ethnicity,
+//                                                                         "Street Address": Street_Address,
+//                                                                         "City": City,
+//                                                                         "State": State,
+//                                                                         "Zip": Zip,
+//                                                                         "SSN": SSN,
+//                                                                         "County": County,
+//                                                                         "Davidson": Davidson,
+//                                                                         "Cell": Cell,
+//                                                                         "Occupation": Occupation,
+//                                                                         "Employer": Employer,
+//                                                                         "Employer Phone": Employer_Phone,
+//                                                                         "Preferred Contact": Preferred_Contact,
+//                                                                         "Email": Email,
+//                                                                         "Primary Insurance": Primary_Insurance,
+//                                                                         "Primary Member ID": Primary_Member_ID,
+//                                                                         "Primary Member Name": Primary_Member_Name,
+//                                                                         "Primary Member SSN": Primary_Member_SSN,
+//                                                                         "Primary Member DOB": Primary_Member_DOB,
+//                                                                         "Secondary Insurance": Secondary_Insurance,
+//                                                                         "Secondary Member ID": Secondary_Member_ID,
+//                                                                         "Primary Care Physician": Primary_Care_Physician,
+//                                                                         "Physician Contact": Physician_Contact,
+//                                                                         "Household Income": Household_Income,
+//                                                                         "Number in Household": Number_in_Household,
+//                                                                         "Heard About": Heard_About,
+//                                                                         "Emergency Name": Emergency_Name,
+//                                                                         "Emergency Relationship": Emergency_Relationship,
+//                                                                         "Emergency Home Phone": Emergency_Home_Phone,
+//                                                                         "Emergency Cell Phone": Emergency_Cell_Phone,
+//                                                                         "Date": Date])
+    }
   
 
 }
