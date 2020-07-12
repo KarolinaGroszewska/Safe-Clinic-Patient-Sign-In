@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AgencyFormThreePageTwoSpanishViewController: UIViewController {
+class AgencyFormThreePageTwoSpanishViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var scrollViews: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var signatureViewOne: SignatureView!
@@ -30,22 +30,127 @@ class AgencyFormThreePageTwoSpanishViewController: UIViewController {
                    scrollViews.bringSubviewToFront(imageView)
                    scrollViews.bringSubviewToFront(signatureViewOne)
                    scrollViews.bringSubviewToFront(signatureViewTwo)
-
+        
+                    let nameField:UITextField = {
+                        let textField = UITextField(frame: CGRect(x: 319.0, y:690.0, width: 187.0, height: 30.0))
+                        textField.translatesAutoresizingMaskIntoConstraints = false
+                        textField.placeholder = "Name"
+                        textField.keyboardType = UIKeyboardType.default
+                        textField.returnKeyType = UIReturnKeyType.done
+                        textField.autocorrectionType = UITextAutocorrectionType.no
+                        textField.font = UIFont.systemFont(ofSize: 13)
+                        textField.borderStyle = UITextField.BorderStyle.roundedRect
+                        textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                        textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                        return textField
+                    }()
+                    nameField.delegate = self
+                    scrollViews.addSubview(nameField)
+                    scrollViews.bringSubviewToFront(nameField)
+        
+                    let dateField:UITextField = {
+                        let textField = UITextField(frame: CGRect(x: 526.0, y:690.0, width: 112.0, height: 30.0))
+                        textField.translatesAutoresizingMaskIntoConstraints = false
+                        textField.placeholder = "Date"
+                        textField.keyboardType = UIKeyboardType.default
+                        textField.returnKeyType = UIReturnKeyType.done
+                        textField.autocorrectionType = UITextAutocorrectionType.no
+                        textField.font = UIFont.systemFont(ofSize: 13)
+                        textField.borderStyle = UITextField.BorderStyle.roundedRect
+                        textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                        textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                        return textField
+                    }()
+                    dateField.delegate = self
+                    scrollViews.addSubview(dateField)
+                    scrollViews.bringSubviewToFront(dateField)
+        
+                    let parentNameField:UITextField = {
+                        let textField = UITextField(frame: CGRect(x: 274.0, y:783.0, width: 170.0, height: 30.0))
+                        textField.translatesAutoresizingMaskIntoConstraints = false
+                        textField.placeholder = "Parent Name"
+                        textField.keyboardType = UIKeyboardType.default
+                        textField.returnKeyType = UIReturnKeyType.done
+                        textField.autocorrectionType = UITextAutocorrectionType.no
+                        textField.font = UIFont.systemFont(ofSize: 13)
+                        textField.borderStyle = UITextField.BorderStyle.roundedRect
+                        textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                        textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                        return textField
+                    }()
+                    parentNameField.delegate = self
+                    scrollViews.addSubview(parentNameField)
+                    scrollViews.bringSubviewToFront(parentNameField)
+        
+        
+                    let relationshipField:UITextField = {
+                            let textField = UITextField(frame: CGRect(x: 445.0, y:783.0, width: 126.0, height: 30.0))
+                            textField.translatesAutoresizingMaskIntoConstraints = false
+                            textField.placeholder = "Relationship"
+                            textField.keyboardType = UIKeyboardType.default
+                            textField.returnKeyType = UIReturnKeyType.done
+                            textField.autocorrectionType = UITextAutocorrectionType.no
+                            textField.font = UIFont.systemFont(ofSize: 13)
+                            textField.borderStyle = UITextField.BorderStyle.roundedRect
+                            textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                            textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                            return textField
+                        }()
+                        relationshipField.delegate = self
+                        scrollViews.addSubview(relationshipField)
+                        scrollViews.bringSubviewToFront(relationshipField)
+                    
+                        let dateTwoField:UITextField = {
+                            let textField = UITextField(frame: CGRect(x: 574.0, y:783.0, width: 86.0, height: 30.0))
+                            textField.translatesAutoresizingMaskIntoConstraints = false
+                            textField.placeholder = "Date"
+                            textField.keyboardType = UIKeyboardType.default
+                            textField.returnKeyType = UIReturnKeyType.done
+                            textField.autocorrectionType = UITextAutocorrectionType.no
+                            textField.font = UIFont.systemFont(ofSize: 13)
+                            textField.borderStyle = UITextField.BorderStyle.roundedRect
+                            textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                            textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                            return textField
+                        }()
+                        dateTwoField.delegate = self
+                        scrollViews.addSubview(dateTwoField)
+                        scrollViews.bringSubviewToFront(dateTwoField)
                }
                
                func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
                {
                     return imageView
                }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       textField.resignFirstResponder()
+       return true
     }
-    */
 
-}
+    @IBAction func onSubmit(_ sender: Any) {
+                  let screenshot = self.view.takeScreenshotTwentyOne()
+                                UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                                
+                            }
+                            
+                            
+                    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {           if let error = error {
+                                let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                                present(ac, animated: true)}
+                            else {
+                                }
+                            }
+                }
+                        extension UIView {
+                                func takeScreenshotTwentyOne() -> UIImage {
+                                drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                                let image = UIGraphicsGetImageFromCurrentImageContext()
+                                UIGraphicsEndImageContext()
+                                if image != nil {
+                                    return image!
+                                }
+                                return UIImage()
+                                
+                            }
+        }

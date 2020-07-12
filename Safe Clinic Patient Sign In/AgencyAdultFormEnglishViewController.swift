@@ -12,7 +12,8 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
     var dict: [String: String] = [:]
-   
+    @IBOutlet weak var SubmitButton: RoundButton!
+    
     @IBOutlet weak var signatureView: SignatureView!
     
     var ref: DatabaseReference!
@@ -576,6 +577,32 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         func textFieldDidChangeSelection(_ textField: UITextField) {
            dict[textField.placeholder ?? ""] = textField.text ?? ""
        }
+    @IBAction func onSubmitButtonPressed(_ sender: Any) {
+            let screenshot = self.view.takeScreenshot()
+                UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                
+            }
+            
+            
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {           if let error = error {
+                let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)}
+            else {
+                }
+            }
+}
+        extension UIView {
+                func takeScreenshot() -> UIImage {
+                drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                let image = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
+                if image != nil {
+                    return image!
+                }
+                return UIImage()
+                
+            }
     
 //    func {
 //    ref = Database.database().reference()
@@ -625,5 +652,4 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
 //                                                                 "Date": Date])
 //    }
   
-
 }
