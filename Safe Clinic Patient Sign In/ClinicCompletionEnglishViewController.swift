@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Photos
+import MessageUI
 
-class ClinicCompletionEnglishViewController: UIViewController, UITextFieldDelegate {
+class ClinicCompletionEnglishViewController: UIViewController, UITextFieldDelegate, MFMailComposeViewControllerDelegate {
 
+    var images:[UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchPhotos()
         
         let firstField:UITextField = {
             let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
@@ -35,14 +40,51 @@ class ClinicCompletionEnglishViewController: UIViewController, UITextFieldDelega
        textField.resignFirstResponder()
        return true
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+func fetchPhotos () {
+    print("here")
+    let fetchOptions = PHFetchOptions()
+    fetchOptions.sortDescriptors = [NSSortDescriptor(key:"creationDate", ascending: false)]
+        fetchOptions.fetchLimit = 1
+        let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: fetchOptions)
+    
+if fetchResult.count > 0 {
+    let totalImageCountNeeded = 1
+    fetchPhotoAtIndex(0, totalImageCountNeeded, fetchResult)
+        
     }
-    */
-
+ }
+    func fetchPhotoAtIndex(_ index:Int, _ totalImageCountNeeded: Int, _ fetchResult: PHFetchResult<PHAsset>) {
+let requestOptions = PHImageRequestOptions()
+        requestOptions.isSynchronous = true
+        
+    PHImageManager.default().requestImage(for: fetchResult.object(at: index) as PHAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.aspectFill, options: requestOptions, resultHandler: {
+        (image, _) in
+        if let image = image {
+            self.images += [image]
+}
+        if index + 1 < fetchResult.count && self.images.count < totalImageCountNeeded {
+            self.fetchPhotoAtIndex(index + 1, totalImageCountNeeded, fetchResult)
+            
+        }
+        else {
+            print("Completed array: \(self.images)")
+}
+    })
+}
+    func sendMail() {
+if MFMailComposeViewController.canSendMail() {
+let mail = MFMailComposeViewController()
+mail.mailComposeDelegate = self
+mail.setCcRecipients(["smsliman@aol.com"])
+mail.setSubject("Your SAC forms")
+mail.setMessageBody("Message body", isHTML: false)
+let imageData: NSData = images[0].pngData()! as NSData
+ mail.addAttachmentData(imageData as Data, mimeType: "image/png", fileName: "imageName.png")
+self.present(mail, animated: true, completion: nil)
+    }
+        
+    }
+    private func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {controller.dismiss(animated: true, completion: nil)
+    }
 }
