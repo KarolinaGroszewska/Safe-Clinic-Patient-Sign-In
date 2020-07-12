@@ -13,7 +13,8 @@ import MessageUI
 class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var signatureView: UIView!
+    
     var ref: DatabaseReference!
 
     
@@ -69,6 +70,9 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
     imageView.contentMode = .scaleToFill
     scrollView.addSubview(imageView)
+    scrollView.addSubview(signatureView)
+    scrollView.bringSubviewToFront(imageView)
+    scrollView.bringSubviewToFront(signatureView)
 
           }
 

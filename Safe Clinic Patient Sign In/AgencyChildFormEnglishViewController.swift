@@ -12,8 +12,8 @@ import Firebase
 class AgencyChildFormEnglishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!    
-        
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var signatureView: SignatureView!
+    
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
@@ -27,6 +27,9 @@ class AgencyChildFormEnglishViewController: UIViewController {
             image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
             image.contentMode = .scaleToFill
             scrollView.addSubview(image)
+            scrollView.addSubview(signatureView)
+            scrollView.bringSubviewToFront(image)
+            scrollView.bringSubviewToFront(signatureView)
 
         
              var Preferred_Name =  ""
