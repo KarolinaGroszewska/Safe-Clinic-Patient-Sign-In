@@ -64,8 +64,10 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         //Imageview on Top of View
         self.view.bringSubviewToFront(imageView)
     
+
+    
         var Date = ""
-        var First_Name  = ""
+        var FirstName  = ""
         var Last_Name = ""
         var Gender = ""
         var Pronouns = ""
@@ -85,11 +87,12 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         
         
 
-        
+
+
         
         ref = Database.database().reference()
         self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": Date,
-                                                             "First Name": First_Name,
+                                                             "FirstName": FirstName,
                                                              "Last Name":Last_Name,
                                                              "Gender":Gender,
                                                              "Preferred Pronouns": Pronouns,
