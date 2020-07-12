@@ -1750,7 +1750,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSubmit:" destination="6A9-iT-pVK" eventType="touchUpInside" id="vWU-IW-4Qc"/>
-                                    <segue destination="1WO-Dd-MG3" kind="show" id="dmO-Fl-kc2"/>
+                                    <segue destination="GMc-85-0sZ" kind="show" id="h57-ze-6bI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xos-kB-QbJ" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
@@ -1906,7 +1906,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="1WO-Dd-MG3" kind="show" id="Wbd-DV-oof"/>
+                                    <segue destination="6A9-iT-pVK" kind="show" id="4wH-YT-VgG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2991,10 +2991,9 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="UGY-XH-bt3"/>
         <segue reference="B0r-bq-oGh"/>
         <segue reference="qZ2-UU-3ck"/>
-        <segue reference="QIt-7B-vWu"/>
-        <segue reference="GHs-vr-bme"/>
-        <segue reference="Wbd-DV-oof"/>
-        <segue reference="hVf-7H-uvL"/>
+        <segue reference="gth-gT-Bve"/>
+        <segue reference="h57-ze-6bI"/>
+        <segue reference="4wH-YT-VgG"/>
         <segue reference="0pK-5D-o2z"/>
         <segue reference="yyb-mK-l8b"/>
         <segue reference="jXL-zQ-zTS"/>
