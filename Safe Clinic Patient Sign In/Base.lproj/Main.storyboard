@@ -1794,12 +1794,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5n-Vd-vcq">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Mqv-pU-8Pf"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="bJa-8j-Rbi"/>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zte-rb-79Z" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
                                 <rect key="frame" x="20" y="962" width="91" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1840,9 +1834,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <viewLayoutGuide key="safeArea" id="sL4-aT-2p6"/>
                     </view>
                     <navigationItem key="navigationItem" id="2kW-Qn-aHm"/>
-                    <connections>
-                        <outlet property="scrollView" destination="A5n-Vd-vcq" id="GCr-4n-BWO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByP-bD-DiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3016,14 +3007,14 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="pX7-hB-kvK"/>
         <segue reference="aWV-5o-WXc"/>
         <segue reference="gb5-zV-7fe"/>
-        <segue reference="koY-PG-2da"/>
-        <segue reference="3Zp-9D-LYb"/>
+        <segue reference="ucK-Zb-1R0"/>
+        <segue reference="bBu-OC-Org"/>
         <segue reference="BdG-oA-VB5"/>
         <segue reference="AJD-Oy-T5C"/>
         <segue reference="1dh-f9-EEI"/>
         <segue reference="9yB-X9-jFe"/>
         <segue reference="Hsa-yO-1mm"/>
-        <segue reference="y3g-vB-MIT"/>
+        <segue reference="zb5-5d-cxl"/>
         <segue reference="zKc-og-f0t"/>
     </inferredMetricsTieBreakers>
     <resources>
