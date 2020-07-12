@@ -476,7 +476,7 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(houseMembersField)
         
         let otherReferralField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 573, y:636, width: 130, height: 20))
+            let textField = UITextField(frame: CGRect(x: 573, y:645, width: 130, height: 20))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Other"
             textField.keyboardType = UIKeyboardType.default
@@ -493,7 +493,7 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(otherReferralField)
         
         let emergencyNameField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 72, y:715, width: 280, height: 20))
+            let textField = UITextField(frame: CGRect(x: 72, y:725, width: 280, height: 20))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Emergency Contact Name"
             textField.keyboardType = UIKeyboardType.default
@@ -510,7 +510,7 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(emergencyNameField)
         
         let emergRelationField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 360, y:715, width: 140, height: 20))
+            let textField = UITextField(frame: CGRect(x: 360, y:725, width: 140, height: 20))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Emergency Contact Relation"
             textField.keyboardType = UIKeyboardType.default
@@ -527,7 +527,7 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(emergRelationField)
         
         let phoneHomeField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 510, y:715, width: 110, height: 20))
+            let textField = UITextField(frame: CGRect(x: 510, y:725, width: 110, height: 20))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Emergency Contact Home Phone"
             textField.keyboardType = UIKeyboardType.default
@@ -544,7 +544,7 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(phoneHomeField)
         
         let phoneCellField:UITextField = {
-             let textField = UITextField(frame: CGRect(x: 625, y:715, width: 110, height: 20))
+             let textField = UITextField(frame: CGRect(x: 625, y:725, width: 110, height: 20))
              textField.translatesAutoresizingMaskIntoConstraints = false
              textField.placeholder = "Emergency Contact Cell Phone"
              textField.keyboardType = UIKeyboardType.default
