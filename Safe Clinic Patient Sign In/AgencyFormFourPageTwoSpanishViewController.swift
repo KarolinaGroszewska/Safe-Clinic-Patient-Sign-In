@@ -28,10 +28,10 @@ class AgencyFormFourPageTwoSpanishViewController: UIViewController, UITextFieldD
                   scrollView.bringSubviewToFront(imageView)
                   scrollView.bringSubviewToFront(signatureView)
         
-                  let firstField:UITextField = {
-                      let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
+                  let dateField:UITextField = {
+                      let textField = UITextField(frame: CGRect(x: 488.0, y:677.0, width: 129.0, height: 30.0))
                       textField.translatesAutoresizingMaskIntoConstraints = false
-                      textField.placeholder = "First Name"
+                      textField.placeholder = "Date"
                       textField.keyboardType = UIKeyboardType.default
                       textField.returnKeyType = UIReturnKeyType.done
                       textField.autocorrectionType = UITextAutocorrectionType.no
@@ -41,9 +41,43 @@ class AgencyFormFourPageTwoSpanishViewController: UIViewController, UITextFieldD
                       textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
                       return textField
                   }()
-                  firstField.delegate = self
-                  scrollView.addSubview(firstField)
-                  scrollView.bringSubviewToFront(firstField)
+                  dateField.delegate = self
+                  scrollView.addSubview(dateField)
+                  scrollView.bringSubviewToFront(dateField)
+        
+                  let dateTwoField:UITextField = {
+                      let textField = UITextField(frame: CGRect(x: 490.0, y:742.0, width: 143.0, height: 30.0))
+                      textField.translatesAutoresizingMaskIntoConstraints = false
+                      textField.placeholder = "Date"
+                      textField.keyboardType = UIKeyboardType.default
+                      textField.returnKeyType = UIReturnKeyType.done
+                      textField.autocorrectionType = UITextAutocorrectionType.no
+                      textField.font = UIFont.systemFont(ofSize: 13)
+                      textField.borderStyle = UITextField.BorderStyle.roundedRect
+                      textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                      textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                      return textField
+                  }()
+                  dateTwoField.delegate = self
+                  scrollView.addSubview(dateTwoField)
+                  scrollView.bringSubviewToFront(dateTwoField)
+        
+                  let therapistField:UITextField = {
+                      let textField = UITextField(frame: CGRect(x: 104.0, y:740.0, width: 334.0, height: 30.0))
+                      textField.translatesAutoresizingMaskIntoConstraints = false
+                      textField.placeholder = "Therapist"
+                      textField.keyboardType = UIKeyboardType.default
+                      textField.returnKeyType = UIReturnKeyType.done
+                      textField.autocorrectionType = UITextAutocorrectionType.no
+                      textField.font = UIFont.systemFont(ofSize: 13)
+                      textField.borderStyle = UITextField.BorderStyle.roundedRect
+                      textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                      textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                      return textField
+                  }()
+                  therapistField.delegate = self
+                  scrollView.addSubview(therapistField)
+                  scrollView.bringSubviewToFront(therapistField)
 
               }
               

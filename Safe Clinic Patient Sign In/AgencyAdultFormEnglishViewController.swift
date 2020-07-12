@@ -12,7 +12,8 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
     var dict: [String: String] = [:]
-   
+    @IBOutlet weak var SubmitButton: RoundButton!
+    
     @IBOutlet weak var signatureView: SignatureView!
     
     var ref: DatabaseReference!
@@ -576,6 +577,10 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
         func textFieldDidChangeSelection(_ textField: UITextField) {
            dict[textField.placeholder ?? ""] = textField.text ?? ""
        }
+    @IBAction func onSubmit(_ sender: Any) {
+        
+        
+    }
     
 //    func {
 //    ref = Database.database().reference()

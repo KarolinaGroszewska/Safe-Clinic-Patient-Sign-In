@@ -24,10 +24,10 @@ class AgencyFormFourSpanishViewController: UIViewController, UITextFieldDelegate
                imageView.contentMode = .scaleToFill
                scrollView.addSubview(imageView)
         
-            let firstField:UITextField = {
-                let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
+            let nameField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 209.0, y:64.0, width: 248.0, height: 30.0))
                 textField.translatesAutoresizingMaskIntoConstraints = false
-                textField.placeholder = "First Name"
+                textField.placeholder = "Name"
                 textField.keyboardType = UIKeyboardType.default
                 textField.returnKeyType = UIReturnKeyType.done
                 textField.autocorrectionType = UITextAutocorrectionType.no
@@ -37,9 +37,26 @@ class AgencyFormFourSpanishViewController: UIViewController, UITextFieldDelegate
                 textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
                 return textField
             }()
-            firstField.delegate = self
-            scrollView.addSubview(firstField)
-            scrollView.bringSubviewToFront(firstField)
+            nameField.delegate = self
+            scrollView.addSubview(nameField)
+            scrollView.bringSubviewToFront(nameField)
+        
+            let dobField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 579.0, y:64.0, width: 83.0, height: 30.0))
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                textField.placeholder = "Date of Birth"
+                textField.keyboardType = UIKeyboardType.default
+                textField.returnKeyType = UIReturnKeyType.done
+                textField.autocorrectionType = UITextAutocorrectionType.no
+                textField.font = UIFont.systemFont(ofSize: 13)
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                return textField
+            }()
+            dobField.delegate = self
+            scrollView.addSubview(dobField)
+            scrollView.bringSubviewToFront(dobField)
 
            }
            

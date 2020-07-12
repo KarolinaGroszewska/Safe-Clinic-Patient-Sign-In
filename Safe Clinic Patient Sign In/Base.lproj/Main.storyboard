@@ -727,7 +727,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onSubmit:" destination="6Qf-Cv-xCm" eventType="primaryActionTriggered" id="TGF-6M-Ylf"/>
+                                    <action selector="onSubmit:" destination="6Qf-Cv-xCm" eventType="primaryActionTriggered" id="Iaq-03-wLT"/>
                                     <segue destination="cQG-cm-Dz5" kind="show" id="FK6-Vz-gxJ"/>
                                 </connections>
                             </button>
@@ -754,7 +754,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="Oj2-26-Pd0"/>
                     <connections>
-                        <outlet property="SubmitButton" destination="2Oj-ER-MCQ" id="V9e-fl-csb"/>
+                        <outlet property="SubmitButton" destination="2Oj-ER-MCQ" id="Kpf-x5-jwU"/>
                         <outlet property="image" destination="EiU-aK-NdZ" id="w6v-Ct-yYi"/>
                         <outlet property="scrollView" destination="y30-09-Qqs" id="yuB-gW-Aw5"/>
                         <outlet property="signatureView" destination="Fwq-KV-buu" id="c7d-2x-AzG"/>
@@ -2952,7 +2952,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
     <inferredMetricsTieBreakers>
         <segue reference="fZr-fn-xrB"/>
         <segue reference="qG1-t0-6Rl"/>
-        <segue reference="T4i-wr-8sG"/>
+        <segue reference="BDn-mt-AOT"/>
         <segue reference="WTq-lF-3r4"/>
         <segue reference="bOa-99-bhu"/>
         <segue reference="Gea-FN-mdq"/>
@@ -2963,7 +2963,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="TpH-w4-uGb"/>
         <segue reference="Wbd-DV-oof"/>
         <segue reference="NBB-eX-iaE"/>
-        <segue reference="0pK-5D-o2z"/>
+        <segue reference="bD7-rh-V7p"/>
         <segue reference="yyb-mK-l8b"/>
         <segue reference="jXL-zQ-zTS"/>
         <segue reference="bGZ-YM-son"/>
@@ -2974,7 +2974,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="tYY-8G-Q3n"/>
         <segue reference="pX7-hB-kvK"/>
         <segue reference="aWV-5o-WXc"/>
-        <segue reference="jO9-0e-5Nr"/>
+        <segue reference="FK6-Vz-gxJ"/>
         <segue reference="ucK-Zb-1R0"/>
         <segue reference="bBu-OC-Org"/>
         <segue reference="BdG-oA-VB5"/>
