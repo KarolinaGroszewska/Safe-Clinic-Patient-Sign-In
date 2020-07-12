@@ -47,6 +47,11 @@
 		4A36612824B9617300BAA48F /* AgencyFormTenSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36612724B9617300BAA48F /* AgencyFormTenSpanishViewController.swift */; };
 		4A36612A24B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36612924B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift */; };
 		4A526F5224BA918F005DA9D1 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5124BA918F005DA9D1 /* SignatureView.swift */; };
+		4A526F5424BAA913005DA9D1 /* AgencyFormTwoPageTwoEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5324BAA913005DA9D1 /* AgencyFormTwoPageTwoEnglishViewController.swift */; };
+		4A526F5824BAA947005DA9D1 /* AgencyFormFourPageTwoEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5724BAA947005DA9D1 /* AgencyFormFourPageTwoEnglishViewController.swift */; };
+		4A526F5A24BAA968005DA9D1 /* AgencyFormTwoPageTwoSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5924BAA968005DA9D1 /* AgencyFormTwoPageTwoSpanishViewController.swift */; };
+		4A526F5C24BAA97A005DA9D1 /* AgencyFormThreePageTwoSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5B24BAA97A005DA9D1 /* AgencyFormThreePageTwoSpanishViewController.swift */; };
+		4A526F5E24BAA991005DA9D1 /* AgencyFormFourPageTwoSpanishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A526F5D24BAA991005DA9D1 /* AgencyFormFourPageTwoSpanishViewController.swift */; };
 		8520A25624BA54B00051BCA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */; };
 		AD11834324B98E0C001DF0CF /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11834224B98E0C001DF0CF /* RoundButton.swift */; };
 		AD80723B24BA5218007B2972 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD80722924BA5218007B2972 /* Raleway-Italic.ttf */; };
@@ -113,6 +118,11 @@
 		4A36612724B9617300BAA48F /* AgencyFormTenSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormTenSpanishViewController.swift; sourceTree = "<group>"; };
 		4A36612924B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyCompletionSpanishViewController.swift; sourceTree = "<group>"; };
 		4A526F5124BA918F005DA9D1 /* SignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
+		4A526F5324BAA913005DA9D1 /* AgencyFormTwoPageTwoEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormTwoPageTwoEnglishViewController.swift; sourceTree = "<group>"; };
+		4A526F5724BAA947005DA9D1 /* AgencyFormFourPageTwoEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormFourPageTwoEnglishViewController.swift; sourceTree = "<group>"; };
+		4A526F5924BAA968005DA9D1 /* AgencyFormTwoPageTwoSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormTwoPageTwoSpanishViewController.swift; sourceTree = "<group>"; };
+		4A526F5B24BAA97A005DA9D1 /* AgencyFormThreePageTwoSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormThreePageTwoSpanishViewController.swift; sourceTree = "<group>"; };
+		4A526F5D24BAA991005DA9D1 /* AgencyFormFourPageTwoSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyFormFourPageTwoSpanishViewController.swift; sourceTree = "<group>"; };
 		6D0638FBBBF7A0126CCF0A7D /* Pods_Safe_Clinic_Patient_Sign_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_Clinic_Patient_Sign_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD11834224B98E0C001DF0CF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -192,8 +202,10 @@
 				4A3660F524B95F8900BAA48F /* AgencyAdultFormEnglishViewController.swift */,
 				4A3660F324B95F6700BAA48F /* AgencyChildFormEnglishViewController.swift */,
 				4A3660F724B95F9E00BAA48F /* AgencyFormTwoEnglishViewController.swift */,
+				4A526F5324BAA913005DA9D1 /* AgencyFormTwoPageTwoEnglishViewController.swift */,
 				4A3660F924B95FAC00BAA48F /* AgencyFormThreeEnglishViewController.swift */,
 				4A3660FB24B95FBC00BAA48F /* AgencyFormFourEnglishViewController.swift */,
+				4A526F5724BAA947005DA9D1 /* AgencyFormFourPageTwoEnglishViewController.swift */,
 				4A3660FD24B95FCD00BAA48F /* AgencyFormFiveEnglishViewController.swift */,
 				4A3660FF24B95FDC00BAA48F /* AgencyFormSixEnglishViewController.swift */,
 				4A36610124B95FF000BAA48F /* AgencyFormSevenEnglishViewController.swift */,
@@ -208,8 +220,11 @@
 				4A36611324B960D200BAA48F /* AgencyAdultFormSpanishViewController.swift */,
 				4A36611524B960E100BAA48F /* AgencyChildFormSpanishViewController.swift */,
 				4A36611724B960F600BAA48F /* AgencyFormTwoSpanishViewController.swift */,
+				4A526F5924BAA968005DA9D1 /* AgencyFormTwoPageTwoSpanishViewController.swift */,
 				4A36611924B9610400BAA48F /* AgencyFormThreeSpanishViewController.swift */,
+				4A526F5B24BAA97A005DA9D1 /* AgencyFormThreePageTwoSpanishViewController.swift */,
 				4A36611B24B9611300BAA48F /* AgencyFormFourSpanishViewController.swift */,
+				4A526F5D24BAA991005DA9D1 /* AgencyFormFourPageTwoSpanishViewController.swift */,
 				4A36611D24B9612400BAA48F /* AgencyFormFiveSpanishViewController.swift */,
 				4A36611F24B9613500BAA48F /* AgencyFormSixSpanishViewController.swift */,
 				4A36612124B9614400BAA48F /* AgencyFormSevenSpanishViewController.swift */,
@@ -395,6 +410,7 @@
 				AD11834324B98E0C001DF0CF /* RoundButton.swift in Sources */,
 				4A3660F624B95F8900BAA48F /* AgencyAdultFormEnglishViewController.swift in Sources */,
 				4A36610024B95FDC00BAA48F /* AgencyFormSixEnglishViewController.swift in Sources */,
+				4A526F5C24BAA97A005DA9D1 /* AgencyFormThreePageTwoSpanishViewController.swift in Sources */,
 				4A36610624B9600D00BAA48F /* AgencyFormNineEnglishViewController.swift in Sources */,
 				4A36612024B9613500BAA48F /* AgencyFormSixSpanishViewController.swift in Sources */,
 				4A526F5224BA918F005DA9D1 /* SignatureView.swift in Sources */,
@@ -405,6 +421,7 @@
 				4A36611024B960B100BAA48F /* ClinicCompletionSpanishViewController.swift in Sources */,
 				4A36611624B960E100BAA48F /* AgencyChildFormSpanishViewController.swift in Sources */,
 				4A3660FE24B95FCD00BAA48F /* AgencyFormFiveEnglishViewController.swift in Sources */,
+				4A526F5E24BAA991005DA9D1 /* AgencyFormFourPageTwoSpanishViewController.swift in Sources */,
 				4A3660D824B9390100BAA48F /* ViewController.swift in Sources */,
 				4A36610C24B9605C00BAA48F /* ClinicAgencyViewSpanishViewController.swift in Sources */,
 				4A36612624B9616500BAA48F /* AgencyFormNineSpanishViewController.swift in Sources */,
@@ -417,6 +434,7 @@
 				4A36610224B95FF000BAA48F /* AgencyFormSevenEnglishViewController.swift in Sources */,
 				4A36612224B9614400BAA48F /* AgencyFormSevenSpanishViewController.swift in Sources */,
 				4A3660D424B9390100BAA48F /* AppDelegate.swift in Sources */,
+				4A526F5424BAA913005DA9D1 /* AgencyFormTwoPageTwoEnglishViewController.swift in Sources */,
 				4A36610424B9600100BAA48F /* AgencyFormEightEnglishViewController.swift in Sources */,
 				4A36612424B9615700BAA48F /* AgencyFormEightSpanishViewController.swift in Sources */,
 				4A36611E24B9612400BAA48F /* AgencyFormFiveSpanishViewController.swift in Sources */,
@@ -426,7 +444,9 @@
 				4A36612824B9617300BAA48F /* AgencyFormTenSpanishViewController.swift in Sources */,
 				4A3660FC24B95FBC00BAA48F /* AgencyFormFourEnglishViewController.swift in Sources */,
 				4A3660F824B95F9E00BAA48F /* AgencyFormTwoEnglishViewController.swift in Sources */,
+				4A526F5A24BAA968005DA9D1 /* AgencyFormTwoPageTwoSpanishViewController.swift in Sources */,
 				4A3660EC24B95EE300BAA48F /* ClinicFormEnglishViewController.swift in Sources */,
+				4A526F5824BAA947005DA9D1 /* AgencyFormFourPageTwoEnglishViewController.swift in Sources */,
 				4A3660F024B95F2900BAA48F /* AgencySelectionEnglishViewController.swift in Sources */,
 				4A36611424B960D200BAA48F /* AgencyAdultFormSpanishViewController.swift in Sources */,
 			);
