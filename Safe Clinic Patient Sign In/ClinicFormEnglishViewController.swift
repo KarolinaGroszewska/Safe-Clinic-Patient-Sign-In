@@ -19,26 +19,47 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         ref = Database.database().reference()
-//        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": "Date",
-//                                                             "First Name": "Name",
-//                                                             "Last Name":"Name",
-//                                                             "Gender":"Gender",
-//                                                             "Preferred Pronouns": "They/Them",
-//                                                             "Street Adress": "Street Address",
-//                                                             "City":"City", "State":"State",
-//                                                             "Zip":"Zip",
-//                                                             "Phone":"Phone",
-//                                                             "Birthday":"Birthday",
-//                                                             "Age":"Age",
-//                                                             "Race or Ethnicity":"Race",
-//                                                             "SSN":"SSN",
-//                                                             "Assault Date": "Date",
-//                                                             "Assault City and State": "City, State",
-//                                                             "Emergency Contact": "Emergency Contact",
-//                                                             "Emergency Phone":"Phone"])
+ 
+        var Date = ""
+        var First_Name  = ""
+        var Last_Name = ""
+        var Gender = ""
+        var Pronouns = ""
+        var Address = ""
+        var City = ""
+        var State = ""
+        var Zip = ""
+        var Phone = ""
+        var Birthday = ""
+        var Age = ""
+        var Race_or_Ethnicity = ""
+        var SSN = ""
+        var Assault_Date=""
+        var Assault_Location=""
+        var Emergency_Contact=""
+        var Emergency_Phone=""
+        
+        
+        ref = Database.database().reference()
+        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": Date,
+                                                             "First Name": First_Name,
+                                                             "Last Name":Last_Name,
+                                                             "Gender":Gender,
+                                                             "Preferred Pronouns": Pronouns,
+                                                             "Street Adress": Address,
+                                                             "City":City,
+                                                             "State":State,
+                                                             "Zip":Zip,
+                                                             "Phone":Phone,
+                                                             "Birthday":Birthday,
+                                                             "Age":Age,
+                                                             "Race or Ethnicity":Race_or_Ethnicity,
+                                                             "SSN":SSN,
+                                                             "Assault Date": Assault_Date,
+                                                             "Assault City and State": Assault_Location,
+                                                             "Emergency Contact": Emergency_Contact,
+                                                             "Emergency Phone":Emergency_Phone])
     scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
     scrollView.minimumZoomScale = 1
     scrollView.maximumZoomScale = 3
@@ -50,6 +71,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     scrollView.addSubview(imageView)
 
           }
+
 //        func sendEmail() {
 //            if MFMailComposeViewController.canSendMail() {
 //                let mail = MFMailComposeViewController()
@@ -69,22 +91,11 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
 //            controller.dismiss(animated: true)
 //        }
 //        sendEmail()
-        
-              
-              func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+         
+    
+
+               func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
               {
                    return imageView
               }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
