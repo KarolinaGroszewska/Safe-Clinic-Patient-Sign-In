@@ -11,9 +11,9 @@ import UIKit
 class AgencyAdultFormSpanishViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var signatureView: SignatureView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         super.viewDidLoad()
              scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
              scrollView.minimumZoomScale = 1
@@ -24,6 +24,9 @@ class AgencyAdultFormSpanishViewController: UIViewController, UIScrollViewDelega
              image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
              image.contentMode = .scaleToFill
              scrollView.addSubview(image)
+             scrollView.addSubview(signatureView)
+             scrollView.bringSubviewToFront(image)
+             scrollView.bringSubviewToFront(signatureView)
 
          }
          

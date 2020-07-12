@@ -11,6 +11,8 @@ import UIKit
 class AgencyFormSixSpanishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var signatureViewOne: SignatureView!
+    @IBOutlet weak var signatureViewTwo: SignatureView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,11 @@ class AgencyFormSixSpanishViewController: UIViewController {
                 image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
                 image.contentMode = .scaleToFill
                 scrollView.addSubview(image)
+            scrollView.addSubview(signatureViewOne)
+            scrollView.addSubview(signatureViewTwo)
+            scrollView.bringSubviewToFront(image)
+            scrollView.bringSubviewToFront(signatureViewOne)
+            scrollView.bringSubviewToFront(signatureViewTwo)
 
                       }
                       

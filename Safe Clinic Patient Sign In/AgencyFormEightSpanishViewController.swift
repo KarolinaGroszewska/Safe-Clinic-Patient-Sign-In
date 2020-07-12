@@ -11,6 +11,8 @@ import UIKit
 class AgencyFormEightSpanishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var signatureViewOne: SignatureView!
+    @IBOutlet weak var signatureViewTwo: SignatureView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,11 @@ class AgencyFormEightSpanishViewController: UIViewController {
             imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
             imageView.contentMode = .scaleToFill
             scrollView.addSubview(imageView)
+        scrollView.addSubview(signatureViewOne)
+        scrollView.addSubview(signatureViewTwo)
+        scrollView.bringSubviewToFront(imageView)
+        scrollView.bringSubviewToFront(signatureViewOne)
+        scrollView.bringSubviewToFront(signatureViewTwo)
 
                   }
                   
