@@ -2219,10 +2219,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="5eZ-z8-mGF">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-tf-NrY" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
                                         <rect key="frame" x="657" y="974" width="91" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2258,6 +2254,10 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                             <segue destination="4Ax-41-MCW" kind="show" id="BdG-oA-VB5"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="AgencyChildFormSpanish" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-n4-Mh7">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="ohz-Ob-MuJ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="jn0-8y-75t"/>
@@ -2269,7 +2269,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <navigationItem key="navigationItem" id="sMY-uj-f2N"/>
                     <connections>
                         <outlet property="SubmitButton" destination="6eU-tf-NrY" id="eZg-qT-vzi"/>
-                        <outlet property="imageView" destination="5eZ-z8-mGF" id="v3J-Ye-6s6"/>
                         <outlet property="scrollView" destination="1Gj-TR-Nwo" id="ntE-pa-hKG"/>
                     </connections>
                 </viewController>
@@ -2297,6 +2296,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="62" y="806" width="421" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-xU-lRJ">
+                                        <rect key="frame" x="217" y="355" width="84" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Llx-y3-FhW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="5hX-mM-lld"/>
@@ -2974,11 +2979,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="tYY-8G-Q3n"/>
         <segue reference="pX7-hB-kvK"/>
         <segue reference="GsS-4H-aLl"/>
-        <segue reference="FK6-Vz-gxJ"/>
+        <segue reference="gb5-zV-7fe"/>
         <segue reference="koY-PG-2da"/>
         <segue reference="3Zp-9D-LYb"/>
         <segue reference="BdG-oA-VB5"/>
-        <segue reference="Hxv-8F-Du1"/>
+        <segue reference="AJD-Oy-T5C"/>
         <segue reference="1dh-f9-EEI"/>
         <segue reference="9yB-X9-jFe"/>
         <segue reference="44Q-3T-44y"/>
@@ -2989,6 +2994,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <image name="AgencyAdultFormEnglish1" width="4250" height="5500"/>
         <image name="AgencyAdultFormSpanish1" width="4250" height="5500"/>
         <image name="AgencyChildFormEnglish1" width="4250" height="5500"/>
+        <image name="AgencyChildFormSpanish" width="433" height="560"/>
         <image name="AgencyFormEightEnglish1" width="4250" height="5500"/>
         <image name="AgencyFormEightSpanish1" width="4250" height="5500"/>
         <image name="AgencyFormFiveEnglish1" width="4250" height="5500"/>
