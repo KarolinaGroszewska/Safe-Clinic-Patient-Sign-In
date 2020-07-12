@@ -31,10 +31,10 @@ class AgencyFormTwoPageTwoSpanishViewController: UIViewController, UITextFieldDe
             scrollView.bringSubviewToFront(signatureViewOne)
             scrollView.bringSubviewToFront(signatureViewTwo)
         
-            let firstField:UITextField = {
-                let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
+            let nameField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 323.0, y:689.0, width: 180.0, height: 30.0))
                 textField.translatesAutoresizingMaskIntoConstraints = false
-                textField.placeholder = "First Name"
+                textField.placeholder = "Name"
                 textField.keyboardType = UIKeyboardType.default
                 textField.returnKeyType = UIReturnKeyType.done
                 textField.autocorrectionType = UITextAutocorrectionType.no
@@ -44,9 +44,77 @@ class AgencyFormTwoPageTwoSpanishViewController: UIViewController, UITextFieldDe
                 textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
                 return textField
             }()
-            firstField.delegate = self
-            scrollView.addSubview(firstField)
-            scrollView.bringSubviewToFront(firstField)
+            nameField.delegate = self
+            scrollView.addSubview(nameField)
+            scrollView.bringSubviewToFront(nameField)
+        
+            let parentNameField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 288.0, y:788.0, width: 180.0, height: 30.0))
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                textField.placeholder = "Parent Name"
+                textField.keyboardType = UIKeyboardType.default
+                textField.returnKeyType = UIReturnKeyType.done
+                textField.autocorrectionType = UITextAutocorrectionType.no
+                textField.font = UIFont.systemFont(ofSize: 13)
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                return textField
+            }()
+            parentNameField.delegate = self
+            scrollView.addSubview(parentNameField)
+            scrollView.bringSubviewToFront(parentNameField)
+        
+            let dateField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 533.0, y:689.0, width: 111.0, height: 30.0))
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                textField.placeholder = "Date"
+                textField.keyboardType = UIKeyboardType.default
+                textField.returnKeyType = UIReturnKeyType.done
+                textField.autocorrectionType = UITextAutocorrectionType.no
+                textField.font = UIFont.systemFont(ofSize: 13)
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                return textField
+            }()
+            dateField.delegate = self
+            scrollView.addSubview(dateField)
+            scrollView.bringSubviewToFront(dateField)
+        
+            let relationshipField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 456.0, y:781.0, width: 112.0, height: 30.0))
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                textField.placeholder = "Relationship"
+                textField.keyboardType = UIKeyboardType.default
+                textField.returnKeyType = UIReturnKeyType.done
+                textField.autocorrectionType = UITextAutocorrectionType.no
+                textField.font = UIFont.systemFont(ofSize: 13)
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                return textField
+            }()
+            relationshipField.delegate = self
+            scrollView.addSubview(relationshipField)
+            scrollView.bringSubviewToFront(relationshipField)
+        
+            let dateTwoField:UITextField = {
+                let textField = UITextField(frame: CGRect(x: 583.0, y:781.0, width: 84.0, height: 30.0))
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                textField.placeholder = "Date"
+                textField.keyboardType = UIKeyboardType.default
+                textField.returnKeyType = UIReturnKeyType.done
+                textField.autocorrectionType = UITextAutocorrectionType.no
+                textField.font = UIFont.systemFont(ofSize: 13)
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                return textField
+            }()
+            dateTwoField.delegate = self
+            scrollView.addSubview(dateTwoField)
+            scrollView.bringSubviewToFront(dateTwoField)
 
         }
         

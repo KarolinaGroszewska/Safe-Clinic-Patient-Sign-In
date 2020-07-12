@@ -31,22 +31,90 @@ class AgencyFormEightSpanishViewController: UIViewController, UITextFieldDelegat
         scrollView.bringSubviewToFront(imageView)
         scrollView.bringSubviewToFront(signatureViewOne)
         scrollView.bringSubviewToFront(signatureViewTwo)
-        let firstField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
-            textField.translatesAutoresizingMaskIntoConstraints = false
-            textField.placeholder = "First Name"
-            textField.keyboardType = UIKeyboardType.default
-            textField.returnKeyType = UIReturnKeyType.done
-            textField.autocorrectionType = UITextAutocorrectionType.no
-            textField.font = UIFont.systemFont(ofSize: 13)
-            textField.borderStyle = UITextField.BorderStyle.roundedRect
-            textField.clearButtonMode = UITextField.ViewMode.whileEditing;
-            textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
-            return textField
-        }()
-        firstField.delegate = self
-        scrollView.addSubview(firstField)
-        scrollView.bringSubviewToFront(firstField)
+        let nameField:UITextField = {
+                    let textField = UITextField(frame: CGRect(x: 327.0, y:700.0, width: 210.0, height: 30.0))
+                    textField.translatesAutoresizingMaskIntoConstraints = false
+                    textField.placeholder = "Legal Name"
+                    textField.keyboardType = UIKeyboardType.default
+                    textField.returnKeyType = UIReturnKeyType.done
+                    textField.autocorrectionType = UITextAutocorrectionType.no
+                    textField.font = UIFont.systemFont(ofSize: 13)
+                    textField.borderStyle = UITextField.BorderStyle.roundedRect
+                    textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                    textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                    return textField
+                }()
+                nameField.delegate = self
+                scrollView.addSubview(nameField)
+                scrollView.bringSubviewToFront(nameField)
+        
+                let parentNameField:UITextField = {
+                    let textField = UITextField(frame: CGRect(x: 279.0, y:792.0, width: 210.0, height: 30.0))
+                    textField.translatesAutoresizingMaskIntoConstraints = false
+                    textField.placeholder = "Guardian Name"
+                    textField.keyboardType = UIKeyboardType.default
+                    textField.returnKeyType = UIReturnKeyType.done
+                    textField.autocorrectionType = UITextAutocorrectionType.no
+                    textField.font = UIFont.systemFont(ofSize: 13)
+                    textField.borderStyle = UITextField.BorderStyle.roundedRect
+                    textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                    textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                    return textField
+                }()
+                parentNameField.delegate = self
+                scrollView.addSubview(parentNameField)
+                scrollView.bringSubviewToFront(parentNameField)
+        
+                let dateField:UITextField = {
+                    let textField = UITextField(frame: CGRect(x: 575.0, y:700.0, width: 92.0, height: 30.0))
+                    textField.translatesAutoresizingMaskIntoConstraints = false
+                    textField.placeholder = "Date"
+                    textField.keyboardType = UIKeyboardType.default
+                    textField.returnKeyType = UIReturnKeyType.done
+                    textField.autocorrectionType = UITextAutocorrectionType.no
+                    textField.font = UIFont.systemFont(ofSize: 13)
+                    textField.borderStyle = UITextField.BorderStyle.roundedRect
+                    textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                    textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                    return textField
+                }()
+                dateField.delegate = self
+                scrollView.addSubview(dateField)
+                scrollView.bringSubviewToFront(dateField)
+        
+                let relationshipField:UITextField = {
+                    let textField = UITextField(frame: CGRect(x: 511.0, y:793.0, width: 92.0, height: 30.0))
+                    textField.translatesAutoresizingMaskIntoConstraints = false
+                    textField.placeholder = "Relationship"
+                    textField.keyboardType = UIKeyboardType.default
+                    textField.returnKeyType = UIReturnKeyType.done
+                    textField.autocorrectionType = UITextAutocorrectionType.no
+                    textField.font = UIFont.systemFont(ofSize: 13)
+                    textField.borderStyle = UITextField.BorderStyle.roundedRect
+                    textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                    textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                    return textField
+                }()
+                relationshipField.delegate = self
+                scrollView.addSubview(relationshipField)
+                scrollView.bringSubviewToFront(relationshipField)
+        
+                let dateTwoField:UITextField = {
+                    let textField = UITextField(frame: CGRect(x: 607.0, y:793.0, width: 55.0, height: 30.0))
+                    textField.translatesAutoresizingMaskIntoConstraints = false
+                    textField.placeholder = "Date"
+                    textField.keyboardType = UIKeyboardType.default
+                    textField.returnKeyType = UIReturnKeyType.done
+                    textField.autocorrectionType = UITextAutocorrectionType.no
+                    textField.font = UIFont.systemFont(ofSize: 13)
+                    textField.borderStyle = UITextField.BorderStyle.roundedRect
+                    textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                    textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                    return textField
+                }()
+                dateTwoField.delegate = self
+                scrollView.addSubview(dateTwoField)
+                scrollView.bringSubviewToFront(dateTwoField)
 
                   }
                   

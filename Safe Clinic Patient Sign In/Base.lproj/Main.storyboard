@@ -728,7 +728,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onSubmit:" destination="6Qf-Cv-xCm" eventType="primaryActionTriggered" id="TGF-6M-Ylf"/>
                                     <action selector="onSubmitButtonPressed:" destination="6Qf-Cv-xCm" eventType="touchUpInside" id="Q6j-Cd-4bl"/>
                                     <segue destination="cQG-cm-Dz5" kind="show" id="FK6-Vz-gxJ"/>
                                 </connections>
@@ -756,7 +755,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="Oj2-26-Pd0"/>
                     <connections>
-                        <outlet property="SubmitButton" destination="2Oj-ER-MCQ" id="V9e-fl-csb"/>
+                        <outlet property="SubmitButton" destination="2Oj-ER-MCQ" id="Kpf-x5-jwU"/>
                         <outlet property="image" destination="EiU-aK-NdZ" id="w6v-Ct-yYi"/>
                         <outlet property="scrollView" destination="y30-09-Qqs" id="yuB-gW-Aw5"/>
                         <outlet property="signatureView" destination="Fwq-KV-buu" id="c7d-2x-AzG"/>
