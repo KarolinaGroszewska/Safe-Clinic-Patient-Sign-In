@@ -632,6 +632,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="41" y="803" width="386" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbI-HR-Mbd">
+                                        <rect key="frame" x="623" y="681" width="100" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="du9-Ji-0pv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qML-OJ-aAK"/>
@@ -705,6 +711,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="37" y="860" width="355" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mnr-30-KTA">
+                                        <rect key="frame" x="622" y="714" width="108" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y84-Jx-m45"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bUi-z6-AVv"/>
@@ -2964,7 +2976,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="tYY-8G-Q3n"/>
         <segue reference="pX7-hB-kvK"/>
         <segue reference="GsS-4H-aLl"/>
-        <segue reference="jO9-0e-5Nr"/>
+        <segue reference="gb5-zV-7fe"/>
         <segue reference="koY-PG-2da"/>
         <segue reference="3Zp-9D-LYb"/>
         <segue reference="Kug-Kc-XPr"/>
