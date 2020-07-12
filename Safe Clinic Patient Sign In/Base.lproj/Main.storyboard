@@ -1797,12 +1797,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5n-Vd-vcq">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sac-logo" translatesAutoresizingMaskIntoConstraints="NO" id="zIt-Oi-Hwb">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Mqv-pU-8Pf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bJa-8j-Rbi"/>
                             </scrollView>
@@ -1847,7 +1841,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="2kW-Qn-aHm"/>
                     <connections>
-                        <outlet property="image" destination="zIt-Oi-Hwb" id="oGg-Qs-3dK"/>
                         <outlet property="scrollView" destination="A5n-Vd-vcq" id="GCr-4n-BWO"/>
                     </connections>
                 </viewController>
@@ -2998,7 +2991,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2mV-HL-sfc"/>
         <segue reference="fZr-fn-xrB"/>
         <segue reference="nOv-QJ-Lcl"/>
         <segue reference="T4i-wr-8sG"/>
@@ -3009,7 +3001,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="B0r-bq-oGh"/>
         <segue reference="qZ2-UU-3ck"/>
         <segue reference="QIt-7B-vWu"/>
-        <segue reference="TpH-w4-uGb"/>
+        <segue reference="GHs-vr-bme"/>
         <segue reference="Wbd-DV-oof"/>
         <segue reference="hVf-7H-uvL"/>
         <segue reference="0pK-5D-o2z"/>
