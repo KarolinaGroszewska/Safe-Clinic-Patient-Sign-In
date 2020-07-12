@@ -9,13 +9,28 @@
 import UIKit
 
 class AgencyFormTwoPageTwoEnglishViewController: UIViewController {
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+              scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                scrollView.minimumZoomScale = 1
+                scrollView.maximumZoomScale = 3
+                scrollView.bounces=false
+                self.view.addSubview(scrollView)
 
-        // Do any additional setup after loading the view.
-    }
-    
+                imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                imageView.contentMode = .scaleToFill
+                scrollView.addSubview(imageView)
+
+            }
+            
+            func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+            {
+                 return imageView
+            }
+        
 
     /*
     // MARK: - Navigation
