@@ -216,6 +216,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="onSubmit:" destination="P0b-6R-ysc" eventType="primaryActionTriggered" id="6za-Z2-gaj"/>
                                             <segue destination="K2l-cU-bQW" kind="show" id="2mV-HL-sfc"/>
                                         </connections>
                                     </button>
