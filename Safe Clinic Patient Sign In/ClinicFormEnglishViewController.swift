@@ -22,23 +22,23 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         
 
         ref = Database.database().reference()
-        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": "Date",
-                                                             "First Name": "Name",
-                                                             "Last Name":"Name",
-                                                             "Gender":"Gender",
-                                                             "Preferred Pronouns": "They/Them",
-                                                             "Street Adress": "Street Address",
-                                                             "City":"City", "State":"State",
-                                                             "Zip":"Zip",
-                                                             "Phone":"Phone",
-                                                             "Birthday":"Birthday",
-                                                             "Age":"Age",
-                                                             "Race/Ethnicity":"Race",
-                                                             "SSN":"SSN",
-                                                             "Assault Date": "Date",
-                                                             "Assault City/State": "City, State",
-                                                             "Emergency Contact": "Emergency Contact",
-                                                             "Emergency Phone":"Phone"])
+//        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": "Date",
+//                                                             "First Name": "Name",
+//                                                             "Last Name":"Name",
+//                                                             "Gender":"Gender",
+//                                                             "Preferred Pronouns": "They/Them",
+//                                                             "Street Adress": "Street Address",
+//                                                             "City":"City", "State":"State",
+//                                                             "Zip":"Zip",
+//                                                             "Phone":"Phone",
+//                                                             "Birthday":"Birthday",
+//                                                             "Age":"Age",
+//                                                             "Race or Ethnicity":"Race",
+//                                                             "SSN":"SSN",
+//                                                             "Assault Date": "Date",
+//                                                             "Assault City and State": "City, State",
+//                                                             "Emergency Contact": "Emergency Contact",
+//                                                             "Emergency Phone":"Phone"])
     
         
 //        func sendEmail() {
