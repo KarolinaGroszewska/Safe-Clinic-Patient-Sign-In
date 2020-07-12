@@ -350,25 +350,6 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         
           }
 
-//        func sendEmail() {
-//            if MFMailComposeViewController.canSendMail() {
-//                let mail = MFMailComposeViewController()
-//                mail.mailComposeDelegate = self
-//                mail.setToRecipients(["smsliman@aol.com"])
-//                mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
-//
-//                present(mail, animated: true)
-//                print("not an error")
-//            } else {
-//                print("error")
-//                // show failure alert
-//            }
-//        }
-//
-//        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-//            controller.dismiss(animated: true)
-//        }
-//        sendEmail()
          
     
 

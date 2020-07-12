@@ -393,6 +393,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onSubmit:" destination="Ge2-Nf-JXo" eventType="touchUpInside" id="W1m-ZP-nC9"/>
                                     <segue destination="WeK-FP-E1z" kind="show" id="uz1-TG-ldl"/>
                                 </connections>
                             </button>
@@ -419,6 +420,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="jVr-ho-G1e"/>
                     <connections>
+                        <outlet property="SubmitButton" destination="dns-eq-0r9" id="PA3-vM-NPG"/>
                         <outlet property="image" destination="Z6z-a5-jBn" id="R32-Jr-XhN"/>
                         <outlet property="scrollView" destination="BGN-z7-iCi" id="T2E-jv-jfa"/>
                         <outlet property="signatureView" destination="PA2-UH-xNL" id="VpZ-S5-EXW"/>
@@ -632,12 +634,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="41" y="803" width="386" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbI-HR-Mbd">
-                                        <rect key="frame" x="623" y="681" width="100" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="du9-Ji-0pv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qML-OJ-aAK"/>
@@ -656,6 +652,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="OnSubmit:" destination="t6i-g2-ycE" eventType="touchUpInside" id="T9j-mx-Eoa"/>
                                     <segue destination="cQG-cm-Dz5" kind="show" id="gb5-zV-7fe"/>
                                 </connections>
                             </button>
@@ -682,6 +679,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="hzv-Qm-6dU"/>
                     <connections>
+                        <outlet property="SubmitButton" destination="ws4-0e-a1s" id="rVY-3V-HTF"/>
                         <outlet property="image" destination="iMh-K2-8DU" id="XaP-cH-rP9"/>
                         <outlet property="scrollView" destination="yHy-bl-nHx" id="qwE-3V-Hhu"/>
                         <outlet property="signatureView" destination="h5X-k6-Blt" id="IVh-YB-rIT"/>
@@ -711,12 +709,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="37" y="860" width="355" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mnr-30-KTA">
-                                        <rect key="frame" x="622" y="714" width="108" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y84-Jx-m45"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bUi-z6-AVv"/>
@@ -735,6 +727,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onSubmit:" destination="6Qf-Cv-xCm" eventType="primaryActionTriggered" id="TGF-6M-Ylf"/>
                                     <segue destination="cQG-cm-Dz5" kind="show" id="FK6-Vz-gxJ"/>
                                 </connections>
                             </button>
@@ -761,6 +754,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="Oj2-26-Pd0"/>
                     <connections>
+                        <outlet property="SubmitButton" destination="2Oj-ER-MCQ" id="V9e-fl-csb"/>
                         <outlet property="image" destination="EiU-aK-NdZ" id="w6v-Ct-yYi"/>
                         <outlet property="scrollView" destination="y30-09-Qqs" id="yuB-gW-Aw5"/>
                         <outlet property="signatureView" destination="Fwq-KV-buu" id="c7d-2x-AzG"/>
@@ -2243,6 +2237,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="onSubmit:" destination="TuO-js-LX0" eventType="touchUpInside" id="QCb-MF-Fcs"/>
                                             <segue destination="mG4-pi-cjg" kind="show" id="yCB-kh-qsU"/>
                                         </connections>
                                     </button>
@@ -2273,6 +2268,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="sMY-uj-f2N"/>
                     <connections>
+                        <outlet property="SubmitButton" destination="6eU-tf-NrY" id="eZg-qT-vzi"/>
                         <outlet property="imageView" destination="5eZ-z8-mGF" id="v3J-Ye-6s6"/>
                         <outlet property="scrollView" destination="1Gj-TR-Nwo" id="ntE-pa-hKG"/>
                     </connections>
@@ -2322,6 +2318,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="onSubmit:" destination="VcQ-Qk-QcI" eventType="touchUpInside" id="KC2-6s-SXm"/>
                                     <segue destination="mG4-pi-cjg" kind="show" id="1YM-zu-na1"/>
                                 </connections>
                             </button>
@@ -2348,6 +2345,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     </view>
                     <navigationItem key="navigationItem" id="V41-5z-THO"/>
                     <connections>
+                        <outlet property="SubmitButton" destination="kpq-xa-bkU" id="G1V-ny-jrA"/>
                         <outlet property="image" destination="grN-Im-eLe" id="pFR-2O-hCV"/>
                         <outlet property="scrollView" destination="aVa-l7-itQ" id="4VO-jE-Ex7"/>
                         <outlet property="signatureView" destination="MQa-Uo-dXu" id="Uyl-9L-eVP"/>
@@ -2955,9 +2953,9 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="fZr-fn-xrB"/>
         <segue reference="qG1-t0-6Rl"/>
         <segue reference="T4i-wr-8sG"/>
-        <segue reference="Nyh-wT-nnL"/>
-        <segue reference="Djz-cN-Y27"/>
-        <segue reference="nhX-yh-enG"/>
+        <segue reference="WTq-lF-3r4"/>
+        <segue reference="bOa-99-bhu"/>
+        <segue reference="Gea-FN-mdq"/>
         <segue reference="UGY-XH-bt3"/>
         <segue reference="U04-4U-wc3"/>
         <segue reference="oup-g7-R8H"/>
@@ -2967,8 +2965,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="NBB-eX-iaE"/>
         <segue reference="0pK-5D-o2z"/>
         <segue reference="yyb-mK-l8b"/>
-        <segue reference="jXL-zQ-zTS"/>
-        <segue reference="bGZ-YM-son"/>
+        <segue reference="fMU-iw-8W8"/>
+        <segue reference="yCB-kh-qsU"/>
         <segue reference="W1b-Vj-OPB"/>
         <segue reference="hWS-lU-1HO"/>
         <segue reference="CCd-CP-80o"/>
@@ -2976,16 +2974,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="tYY-8G-Q3n"/>
         <segue reference="pX7-hB-kvK"/>
         <segue reference="GsS-4H-aLl"/>
-        <segue reference="gb5-zV-7fe"/>
+        <segue reference="FK6-Vz-gxJ"/>
         <segue reference="koY-PG-2da"/>
         <segue reference="3Zp-9D-LYb"/>
-        <segue reference="Kug-Kc-XPr"/>
-        <segue reference="AJD-Oy-T5C"/>
-        <segue reference="SMY-JX-Pfr"/>
+        <segue reference="BdG-oA-VB5"/>
+        <segue reference="Hxv-8F-Du1"/>
+        <segue reference="1dh-f9-EEI"/>
         <segue reference="9yB-X9-jFe"/>
         <segue reference="44Q-3T-44y"/>
         <segue reference="y3g-vB-MIT"/>
-        <segue reference="vTW-9W-3De"/>
+        <segue reference="zKc-og-f0t"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AgencyAdultFormEnglish1" width="4250" height="5500"/>
