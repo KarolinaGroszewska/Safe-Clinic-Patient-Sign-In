@@ -193,6 +193,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                             <segue destination="K2l-cU-bQW" kind="show" id="L0C-3X-56e"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQK-l8-AaT" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="201" y="854" width="449" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="SP7-Ec-YUG"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ApU-Zh-UfK"/>
@@ -205,11 +210,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="Yve-5u-rPU" id="Fbg-6f-EZK"/>
                         <outlet property="scrollView" destination="MtD-w4-EDr" id="CYh-Av-cms"/>
+                        <outlet property="signatureView" destination="uQK-l8-AaT" id="NAH-Qo-vOz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izY-jK-hOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="-1368"/>
+            <point key="canvasLocation" x="1079.6875" y="-1368.1640625"/>
         </scene>
         <!--Clinic Agency View Spanish View Controller-->
         <scene sceneID="Mpf-7o-h17">
@@ -302,10 +308,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="958"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E0L-tf-flb">
-                                        <rect key="frame" x="4" y="0.0" width="760" height="1016"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PA2-UH-xNL" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="137" y="860" width="330" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </stackView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="IwU-vj-Yzl"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Naq-d2-NcA"/>
@@ -330,11 +337,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="Z6z-a5-jBn" id="R32-Jr-XhN"/>
                         <outlet property="scrollView" destination="BGN-z7-iCi" id="T2E-jv-jfa"/>
+                        <outlet property="signatureView" destination="PA2-UH-xNL" id="VpZ-S5-EXW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjT-2E-aK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="1865"/>
+            <point key="canvasLocation" x="1079.6875" y="1864.4531249999998"/>
         </scene>
         <!--Agency Selection English View Controller-->
         <scene sceneID="ZOQ-6j-CWv">
@@ -502,6 +510,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-k6-Blt" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="54" y="829" width="373" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="du9-Ji-0pv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qML-OJ-aAK"/>
@@ -522,11 +535,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="iMh-K2-8DU" id="XaP-cH-rP9"/>
                         <outlet property="scrollView" destination="yHy-bl-nHx" id="qwE-3V-Hhu"/>
+                        <outlet property="signatureView" destination="h5X-k6-Blt" id="IVh-YB-rIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecH-2z-1oy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="-200"/>
+            <point key="canvasLocation" x="1805.46875" y="-200.390625"/>
         </scene>
         <!--Agency Adult Form English View Controller-->
         <scene sceneID="KVY-AN-4CH">
@@ -544,6 +558,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fwq-KV-buu" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="860" width="336" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y84-Jx-m45"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="bUi-z6-AVv"/>
@@ -564,11 +583,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="EiU-aK-NdZ" id="w6v-Ct-yYi"/>
                         <outlet property="scrollView" destination="y30-09-Qqs" id="yuB-gW-Aw5"/>
+                        <outlet property="signatureView" destination="Fwq-KV-buu" id="c7d-2x-AzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn1-L1-beI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="-921"/>
+            <point key="canvasLocation" x="1805.46875" y="-921.09374999999989"/>
         </scene>
         <!--Agency Form Two English View Controller-->
         <scene sceneID="e6j-DS-qZg">
@@ -628,6 +648,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-Q7-QFv" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="102" y="768" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wk-Ub-GLq" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="102" y="845" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="63N-3O-wmR"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="OIZ-qp-GWz"/>
@@ -648,11 +678,13 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="aMF-0J-7Nx" id="Qgi-LF-Fzf"/>
                         <outlet property="scrollView" destination="37A-HQ-0ap" id="2N7-Z5-op4"/>
+                        <outlet property="signatureViewTwo" destination="5Wk-Ub-GLq" id="0Sk-Rd-FNk"/>
+                        <outlet property="singatureViewOne" destination="a1W-Q7-QFv" id="1h9-0z-RfX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXP-Rp-ZJF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3142" y="-615"/>
+            <point key="canvasLocation" x="3141.40625" y="-615.234375"/>
         </scene>
         <!--Agency Form Five English View Controller-->
         <scene sceneID="R9Y-c6-fbv">
@@ -670,6 +702,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIY-tP-saV" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="759" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOR-Xb-XCk" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="675" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="j4i-zI-RwS"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ZpB-MC-Snz"/>
@@ -690,6 +732,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="24M-xy-QP5" id="Iqz-R6-I40"/>
                         <outlet property="scrollView" destination="Dn9-DV-exZ" id="5j2-IJ-UIo"/>
+                        <outlet property="signatureOne" destination="24M-xy-QP5" id="d99-72-Gt8"/>
+                        <outlet property="signatureTwo" destination="yIY-tP-saV" id="Mzo-sM-ViS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBp-f4-f1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -712,6 +756,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1f3-al-e1A" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="794" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zp2-QE-EDd" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="710" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="cHa-Kl-2K5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ejK-AU-0io"/>
@@ -732,6 +786,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="e9i-yn-Wdv" id="kdK-Iu-jQj"/>
                         <outlet property="scrollView" destination="UOX-SQ-c4J" id="S0H-mu-zLx"/>
+                        <outlet property="signatureViewOne" destination="1f3-al-e1A" id="4Pf-Dp-F3S"/>
+                        <outlet property="signatureViewTwo" destination="Zp2-QE-EDd" id="62P-oV-E55"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pf7-u4-dGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -754,6 +810,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="8" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-TE-nKj" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="731" width="219" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-ub-0nz" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="842" width="174" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="y3Z-ce-WgQ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="p3U-Rf-eJB"/>
@@ -774,11 +840,13 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="aoO-Aj-ks4" id="BxV-Jj-8Zg"/>
                         <outlet property="scrollView" destination="DPn-Xd-STm" id="pB1-2e-T6v"/>
+                        <outlet property="signatureOne" destination="aSa-TE-nKj" id="Dtx-fG-4ph"/>
+                        <outlet property="signatureTwo" destination="YbZ-ub-0nz" id="5pV-yY-Bd4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhL-tU-z2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5804" y="-615"/>
+            <point key="canvasLocation" x="5803.90625" y="-615.234375"/>
         </scene>
         <!--Agency Form Eight English View Controller-->
         <scene sceneID="dvP-ph-6mQ">
@@ -796,6 +864,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVz-bf-Ha0" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="103" y="778" width="174" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-xQ-2up" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="103" y="667" width="219" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="3iW-LO-bbx"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8Kw-j6-7wB"/>
@@ -816,6 +894,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="HeG-dE-gmF" id="lon-dp-jIL"/>
                         <outlet property="scrollView" destination="xa1-5L-zwy" id="c2s-sB-qDH"/>
+                        <outlet property="signatureOne" destination="gJa-xQ-2up" id="612-Sn-WHa"/>
+                        <outlet property="signatureTwo" destination="dVz-bf-Ha0" id="xNa-OY-3zw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e0-Bd-VKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -838,6 +918,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GF0-sh-Neh" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="779" width="432" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="89b-4t-3QW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="LFM-Ju-21h"/>
@@ -858,11 +943,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="tBc-P6-i47" id="I2O-ef-drr"/>
                         <outlet property="scrollView" destination="Olq-Ji-NaX" id="aFB-wj-lFC"/>
+                        <outlet property="signatureView" destination="GF0-sh-Neh" id="m0O-q9-Fgx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAO-qo-OAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7121" y="-615"/>
+            <point key="canvasLocation" x="7120.3125" y="-615.234375"/>
         </scene>
         <!--Agency Form Ten English View Controller-->
         <scene sceneID="GCP-fv-E4f">
@@ -880,6 +966,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-DQ-s36" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="655" width="240" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="b3J-5p-PdP"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="L97-wH-G66"/>
@@ -897,11 +988,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="IJJ-Xn-1cP" id="HeB-JY-pYX"/>
                         <outlet property="scrollView" destination="rJ0-GT-L9s" id="lMv-8B-rKg"/>
+                        <outlet property="signatureView" destination="HZW-DQ-s36" id="vCh-zk-bQH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOY-Kc-kYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7763" y="-615"/>
+            <point key="canvasLocation" x="7762.5" y="-615.234375"/>
         </scene>
         <!--Agency Form Two Spanish View Controller-->
         <scene sceneID="gQJ-vA-5Hl">
@@ -985,7 +1077,7 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KlD-6y-CAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3815.625" y="1735.546875"/>
+            <point key="canvasLocation" x="3141" y="1239"/>
         </scene>
         <!--Agency Form Three Page Two Spanish View Controller-->
         <scene sceneID="sQn-MF-4WC">
@@ -1024,7 +1116,6 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqY-fi-lTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3815.625" y="2418.75"/>
-
         </scene>
         <!--Agency Form Five Spanish View Controller-->
         <scene sceneID="Ng9-Yn-ONY">
@@ -1042,6 +1133,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Os-FI-z26" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="101" y="690" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-0e-PCF" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="101" y="594" width="174" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Nss-kY-lm2"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EhE-50-BuH"/>
@@ -1062,11 +1163,13 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="WlZ-8b-r5I" id="wPi-No-7U8"/>
                         <outlet property="scrollView" destination="zrq-wO-UYy" id="agN-qv-A46"/>
+                        <outlet property="signatureViewOne" destination="vSg-0e-PCF" id="i1S-bh-CS8"/>
+                        <outlet property="signatureViewTwi" destination="9Os-FI-z26" id="FeW-Wz-9O1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROc-KF-lug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4420" y="1239"/>
+            <point key="canvasLocation" x="4419.53125" y="1238.671875"/>
         </scene>
         <!--Agency Form Six Spanish View Controller-->
         <scene sceneID="p8p-2c-cfp">
@@ -1084,6 +1187,23 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKL-6K-tvq" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="101" y="710" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njf-Lm-HnK" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="219" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="reI-FC-6Xr" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="101" y="807" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Jb6-8O-Bqg"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="glM-Bx-1xd"/>
@@ -1104,11 +1224,13 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="ybK-RH-jga" id="6Gv-gm-cnU"/>
                         <outlet property="scrollView" destination="Qjv-vQ-Vmg" id="U0t-dW-G3T"/>
+                        <outlet property="signatureViewOne" destination="njf-Lm-HnK" id="gkt-sk-3ou"/>
+                        <outlet property="signatureViewTwo" destination="reI-FC-6Xr" id="dUL-Y9-ffS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZF0-dI-5k8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5076" y="1239"/>
+            <point key="canvasLocation" x="5075.78125" y="1238.671875"/>
         </scene>
         <!--Agency Form Seven Spanish View Controller-->
         <scene sceneID="Pxd-uu-CQC">
@@ -1168,6 +1290,23 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ny8-xM-5di" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="804" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iph-vO-xek" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="707" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZF-ix-VJ3" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="219" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="5f6-h6-EM5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="2DG-XV-Rjn"/>
@@ -1188,6 +1327,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="YCQ-ce-P7j" id="YRl-Jf-Zxa"/>
                         <outlet property="scrollView" destination="vtz-CX-0dw" id="HD9-yM-f3e"/>
+                        <outlet property="signatureViewOne" destination="NZF-ix-VJ3" id="4ld-2h-qKL"/>
+                        <outlet property="signatureViewTwo" destination="ny8-xM-5di" id="efe-FY-qaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtL-W2-MAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1210,6 +1351,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWX-yj-Mfp" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="763" width="359" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Y3Q-5u-Jgk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Qlh-FP-aRe"/>
@@ -1230,11 +1376,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="Ydq-nb-X2V" id="9wR-mF-esm"/>
                         <outlet property="scrollView" destination="iRr-xG-Dl2" id="ujf-XO-liM"/>
+                        <outlet property="signatureView" destination="wWX-yj-Mfp" id="eOq-NL-Qqz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPC-Go-vbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7120" y="1239"/>
+            <point key="canvasLocation" x="7119.53125" y="1238.671875"/>
         </scene>
         <!--Agency Form Ten Spanish View Controller-->
         <scene sceneID="ngv-Nx-iZA">
@@ -1252,6 +1399,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koE-05-jUL" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="57" y="630" width="295" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="OPy-va-2fK"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="xra-sH-TLV"/>
@@ -1272,11 +1424,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="mib-O4-SlW" id="ALx-iN-hhi"/>
                         <outlet property="scrollView" destination="H29-tR-VQy" id="NBu-eT-oWz"/>
+                        <outlet property="signatureView" destination="koE-05-jUL" id="zbd-2u-8Tf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2J-LJ-VKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7762" y="1239"/>
+            <point key="canvasLocation" x="7761.71875" y="1238.671875"/>
         </scene>
         <!--Agency Form Four English View Controller-->
         <scene sceneID="y3i-RV-NGU">
@@ -1420,6 +1573,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQa-Uo-dXu" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="834" width="421" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Llx-y3-FhW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="5hX-mM-lld"/>
@@ -1443,11 +1601,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="image" destination="grN-Im-eLe" id="pFR-2O-hCV"/>
                         <outlet property="scrollView" destination="aVa-l7-itQ" id="4VO-jE-Ex7"/>
+                        <outlet property="signatureView" destination="MQa-Uo-dXu" id="Uyl-9L-eVP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GvR-ZC-jwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="804"/>
+            <point key="canvasLocation" x="1804.6875" y="803.90625"/>
         </scene>
         <!--Clinic Completion English View Controller-->
         <scene sceneID="y4x-oT-Nuv">
@@ -1697,6 +1856,16 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHH-AV-Ay3" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="799" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zK1-Ax-DfM" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="698" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Zvl-Di-eab"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ISR-VF-VQ6"/>
@@ -1714,6 +1883,12 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <viewLayoutGuide key="safeArea" id="68l-37-FGi"/>
                     </view>
                     <navigationItem key="navigationItem" id="44U-Io-ylC"/>
+                    <connections>
+                        <outlet property="imageView" destination="mMO-SW-uIV" id="Dog-S5-c7d"/>
+                        <outlet property="scrollView" destination="emR-jM-rPc" id="fUG-QD-nwq"/>
+                        <outlet property="signatureViewOne" destination="zK1-Ax-DfM" id="OzP-JH-FZK"/>
+                        <outlet property="signatureViewTwo" destination="LHH-AV-Ay3" id="OiE-rA-OVU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1v-ZH-n0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1735,6 +1910,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLc-gK-ela" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="688" width="334" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="gw4-1E-cfA"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="5Rs-0i-8tP"/>
@@ -1752,6 +1932,11 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                         <viewLayoutGuide key="safeArea" id="fcK-7T-Hlq"/>
                     </view>
                     <navigationItem key="navigationItem" id="oVp-7W-uEI"/>
+                    <connections>
+                        <outlet property="imageView" destination="gfa-iq-fTK" id="VHT-uU-4nK"/>
+                        <outlet property="scrollView" destination="uo3-XI-zXi" id="L4F-8S-aFC"/>
+                        <outlet property="signatureView" destination="sLc-gK-ela" id="fwG-sy-7aK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqw-tZ-pfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1770,9 +1955,19 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AgencyFormTwoEnglish2" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-Xq-WsF">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
+                                        <rect key="frame" x="8" y="8" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-4Y-X0l" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="752" width="219" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o5r-14-G1Z" customClass="SignatureView" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="836" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Qxf-ou-mwf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Bto-3B-CAQ"/>
@@ -1793,6 +1988,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                     <connections>
                         <outlet property="imageView" destination="Nzg-Xq-WsF" id="NQf-2T-gzU"/>
                         <outlet property="scrollView" destination="sz7-1x-dZQ" id="itQ-ov-GzS"/>
+                        <outlet property="signatureViewOne" destination="BIX-4Y-X0l" id="hPm-9I-Ov2"/>
+                        <outlet property="signatureViewTwo" destination="o5r-14-G1Z" id="iyP-nU-dOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaN-6N-2hL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

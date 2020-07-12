@@ -11,6 +11,8 @@ import UIKit
 class AgencyFormFiveEnglishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var signatureOne: UIImageView!
+    @IBOutlet weak var signatureTwo: SignatureView!
     
 
     
@@ -25,6 +27,11 @@ class AgencyFormFiveEnglishViewController: UIViewController {
                 image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
                 image.contentMode = .scaleToFill
                 scrollView.addSubview(image)
+                scrollView.addSubview(signatureOne)
+                scrollView.addSubview(signatureTwo)
+                scrollView.bringSubviewToFront(image)
+                scrollView.bringSubviewToFront(signatureOne)
+                scrollView.bringSubviewToFront(signatureTwo)
 
             }
             

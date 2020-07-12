@@ -12,6 +12,7 @@ class ClinicFormSpanishViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var signatureView: SignatureView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class ClinicFormSpanishViewController: UIViewController, UIScrollViewDelegate {
         image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
         image.contentMode = .scaleToFill
         scrollView.addSubview(image)
+        scrollView.addSubview(signatureView)
+        scrollView.bringSubviewToFront(image)
+        scrollView.bringSubviewToFront(signatureView)
 
     }
     

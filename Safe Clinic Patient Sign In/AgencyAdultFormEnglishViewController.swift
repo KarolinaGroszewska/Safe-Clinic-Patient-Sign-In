@@ -12,7 +12,8 @@ import Firebase
 class AgencyAdultFormEnglishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var image: UIImageView!
-   
+    @IBOutlet weak var signatureView: SignatureView!
+    
     var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class AgencyAdultFormEnglishViewController: UIViewController {
          image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
          image.contentMode = .scaleToFill
          scrollView.addSubview(image)
+         scrollView.addSubview(signatureView)
+         scrollView.bringSubviewToFront(image)
+         scrollView.bringSubviewToFront(signatureView)
         
         var Preferred_Name =  ""
         var First_Name = ""
