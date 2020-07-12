@@ -113,6 +113,7 @@
 		4A36612924B9618A00BAA48F /* AgencyCompletionSpanishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyCompletionSpanishViewController.swift; sourceTree = "<group>"; };
 		6D0638FBBBF7A0126CCF0A7D /* Pods_Safe_Clinic_Patient_Sign_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_Clinic_Patient_Sign_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8520A25724BA8CDA0051BCA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD11834224B98E0C001DF0CF /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AD80722924BA5218007B2972 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Italic.ttf"; path = "Raleway/Raleway-Italic.ttf"; sourceTree = SOURCE_ROOT; };
 		AD80722A24BA5218007B2972 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "Raleway/Raleway-Light.ttf"; sourceTree = SOURCE_ROOT; };
@@ -179,6 +180,7 @@
 			children = (
 				4A3660D324B9390100BAA48F /* AppDelegate.swift */,
 				4A3660D524B9390100BAA48F /* SceneDelegate.swift */,
+				8520A25724BA8CDA0051BCA5 /* GoogleService-Info.plist */,
 				4A3660D924B9390100BAA48F /* Main.storyboard */,
 				AD11834224B98E0C001DF0CF /* RoundButton.swift */,
 				4A3660D724B9390100BAA48F /* ViewController.swift */,
