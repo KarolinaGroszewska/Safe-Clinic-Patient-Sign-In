@@ -15,6 +15,8 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var SubmitButton: UIButton!
+    @IBOutlet weak var signatureView: UIView!
+    
     var ref: DatabaseReference!
     var dict: [String: String] = [:]
 
@@ -31,6 +33,9 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
     imageView.contentMode = .scaleToFill
     scrollView.addSubview(imageView)
+    scrollView.addSubview(signatureView)
+    scrollView.bringSubviewToFront(imageView)
+    scrollView.bringSubviewToFront(signatureView)
         
     let firstField:UITextField = {
         let textField = UITextField(frame: CGRect(x: 170.0, y:190.0, width: 100.0, height: 30.0))

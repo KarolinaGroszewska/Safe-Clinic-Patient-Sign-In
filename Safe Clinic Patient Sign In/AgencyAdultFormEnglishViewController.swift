@@ -14,6 +14,8 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
     @IBOutlet weak var image: UIImageView!
     var dict: [String: String] = [:]
    
+    @IBOutlet weak var signatureView: SignatureView!
+    
     var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,9 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
          image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
          image.contentMode = .scaleToFill
          scrollView.addSubview(image)
+         scrollView.addSubview(signatureView)
+         scrollView.bringSubviewToFront(image)
+         scrollView.bringSubviewToFront(signatureView)
         
         let firstField:UITextField = {
             let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
