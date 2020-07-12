@@ -20,25 +20,6 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        ref = Database.database().reference()
-//        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": "Date",
-//                                                             "First Name": "Name",
-//                                                             "Last Name":"Name",
-//                                                             "Gender":"Gender",
-//                                                             "Preferred Pronouns": "They/Them",
-//                                                             "Street Adress": "Street Address",
-//                                                             "City":"City", "State":"State",
-//                                                             "Zip":"Zip",
-//                                                             "Phone":"Phone",
-//                                                             "Birthday":"Birthday",
-//                                                             "Age":"Age",
-//                                                             "Race or Ethnicity":"Race",
-//                                                             "SSN":"SSN",
-//                                                             "Assault Date": "Date",
-//                                                             "Assault City and State": "City, State",
-//                                                             "Emergency Contact": "Emergency Contact",
-//                                                             "Emergency Phone":"Phone"])
     
         
 //        func sendEmail() {
@@ -81,8 +62,51 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         imageView.frame = CGRect(x: 0, y: 0, width: 768, height: 1024)
         stackView.addArrangedSubview(imageView)
         //Imageview on Top of View
-        self.view.bringSubviewToFront(imageView)    }
+        self.view.bringSubviewToFront(imageView)
     
+        var Date = ""
+        var First_Name  = ""
+        var Last_Name = ""
+        var Gender = ""
+        var Pronouns = ""
+        var Address = ""
+        var City = ""
+        var State = ""
+        var Zip = ""
+        var Phone = ""
+        var Birthday = ""
+        var Age = ""
+        var Race_or_Ethnicity = ""
+        var SSN = ""
+        var Assault_Date=""
+        var Assault_Location=""
+        var Emergency_Contact=""
+        var Emergency_Phone=""
+        
+        
+
+        
+        
+        ref = Database.database().reference()
+        self.ref.child("ClinicPatients").childByAutoId().setValue(["Date": Date,
+                                                             "First Name": First_Name,
+                                                             "Last Name":Last_Name,
+                                                             "Gender":Gender,
+                                                             "Preferred Pronouns": Pronouns,
+                                                             "Street Adress": Address,
+                                                             "City":City,
+                                                             "State":State,
+                                                             "Zip":Zip,
+                                                             "Phone":Phone,
+                                                             "Birthday":Birthday,
+                                                             "Age":Age,
+                                                             "Race or Ethnicity":Race_or_Ethnicity,
+                                                             "SSN":SSN,
+                                                             "Assault Date": Assault_Date,
+                                                             "Assault City and State": Assault_Location,
+                                                             "Emergency Contact": Emergency_Contact,
+                                                             "Emergency Phone":Emergency_Phone])
+    }
 
     /*
     // MARK: - Navigation
