@@ -18,7 +18,6 @@ class AgencyChildFormEnglishViewController: UIViewController {
             scrollView.minimumZoomScale = 1
             scrollView.maximumZoomScale = 3
             scrollView.bounces=false
-            scrollView.delegate=self;
             self.view.addSubview(scrollView)
 
             image.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
