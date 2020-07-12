@@ -11,33 +11,26 @@ import UIKit
 class AgencyFormEightEnglishViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var stackView: UIStackView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+                 
+                  override func viewDidLoad() {
+                      super.viewDidLoad()
+                          scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                          scrollView.minimumZoomScale = 1
+                          scrollView.maximumZoomScale = 3
+                          scrollView.bounces=false
+                          self.view.addSubview(scrollView)
 
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(scrollView)
+                          imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                          imageView.contentMode = .scaleToFill
+                          scrollView.addSubview(imageView)
 
-        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 23.0
-        scrollView.addSubview(stackView)
-
-        scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[stackView]|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView as Any]))
-        scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[stackView]|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView as Any]))
-        let imageName = "AgencyFormEightEnglish1"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
-        imageView.frame = CGRect(x: 0, y: 0, width: 768, height: 1024)
-        stackView.addArrangedSubview(imageView)
-        //Imageview on Top of View
-        self.view.bringSubviewToFront(imageView)       }
-    
+                      }
+                      
+                      func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+                      {
+                           return imageView
+                      }
 
     /*
     // MARK: - Navigation

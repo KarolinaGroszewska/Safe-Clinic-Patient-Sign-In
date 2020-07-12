@@ -19,51 +19,8 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
-        
-//        func sendEmail() {
-//            if MFMailComposeViewController.canSendMail() {
-//                let mail = MFMailComposeViewController()
-//                mail.mailComposeDelegate = self
-//                mail.setToRecipients(["smsliman@aol.com"])
-//                mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
-//
-//                present(mail, animated: true)
-//                print("not an error")
-//            } else {
-//                print("error")
-//                // show failure alert
-//            }
-//        }
-//
-//        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-//            controller.dismiss(animated: true)
-//        }
-//        sendEmail()
-        
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(scrollView)
-
-        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 23.0
-        scrollView.addSubview(stackView)
-
-        scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[stackView]|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView as Any]))
-        scrollView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[stackView]|", options: NSLayoutConstraint.FormatOptions.alignAllCenterX, metrics: nil, views: ["stackView": stackView as Any]))
-        let imageName = "ClincAgencyFormEnglish1"
-        let image = UIImage(named: imageName)
-        let imageView = UIImageView(image: image!)
-        imageView.frame = CGRect(x: 0, y: 0, width: 768, height: 1024)
-        stackView.addArrangedSubview(imageView)
-        //Imageview on Top of View
-        self.view.bringSubviewToFront(imageView)
-    
+        ref = Database.database().reference()
+ 
         var Date = ""
         var First_Name  = ""
         var Last_Name = ""
@@ -82,9 +39,6 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         var Assault_Location=""
         var Emergency_Contact=""
         var Emergency_Phone=""
-        
-        
-
         
         
         ref = Database.database().reference()
@@ -106,16 +60,42 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
                                                              "Assault City and State": Assault_Location,
                                                              "Emergency Contact": Emergency_Contact,
                                                              "Emergency Phone":Emergency_Phone])
-    }
+    scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+    scrollView.minimumZoomScale = 1
+    scrollView.maximumZoomScale = 3
+    scrollView.bounces=false
+    self.view.addSubview(scrollView)
 
-    /*
-    // MARK: - Navigation
+    imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+    imageView.contentMode = .scaleToFill
+    scrollView.addSubview(imageView)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+          }
 
+//        func sendEmail() {
+//            if MFMailComposeViewController.canSendMail() {
+//                let mail = MFMailComposeViewController()
+//                mail.mailComposeDelegate = self
+//                mail.setToRecipients(["smsliman@aol.com"])
+//                mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+//
+//                present(mail, animated: true)
+//                print("not an error")
+//            } else {
+//                print("error")
+//                // show failure alert
+//            }
+//        }
+//
+//        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+//            controller.dismiss(animated: true)
+//        }
+//        sendEmail()
+         
+    
+
+               func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+              {
+                   return imageView
+              }
 }
