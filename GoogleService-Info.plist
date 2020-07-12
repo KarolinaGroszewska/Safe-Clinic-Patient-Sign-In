@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>706466058668-0ve7onjmu5m89225kk2p4ajeh4rg8hl3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.706466058668-0ve7onjmu5m89225kk2p4ajeh4rg8hl3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBee6zzAcZKJDiXqyPJ6jZmxhbYLWm8nNE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>706466058668</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>KarolinaGroszewska.Safe-Clinic-Patient-Sign-In</string>
+	<key>PROJECT_ID</key>
+	<string>sac-hackathon</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sac-hackathon.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:706466058668:ios:f58de4169ab3aed3c1ea09</string>
+	<key>DATABASE_URL</key>
+	<string>https://sac-hackathon.firebaseio.com</string>
+</dict>
+</plist>
