@@ -59,15 +59,30 @@ class AgencyFormEightSpanishViewController: UIViewController, UITextFieldDelegat
            return true
         }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+    @IBAction func onSubmit(_ sender: Any) {
+                  let screenshot = self.view.takeScreenshotTwentySeven()
+                                UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                                
+                            }
+                            
+                            
+                    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {           if let error = error {
+                                let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                                present(ac, animated: true)}
+                            else {
+                                }
+                            }
+                }
+                        extension UIView {
+                                func takeScreenshotTwentySeven() -> UIImage {
+                                drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                                let image = UIGraphicsGetImageFromCurrentImageContext()
+                                UIGraphicsEndImageContext()
+                                if image != nil {
+                                    return image!
+                                }
+                                return UIImage()
+                                
+                            }
+        }

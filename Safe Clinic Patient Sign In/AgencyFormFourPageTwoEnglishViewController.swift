@@ -9,22 +9,77 @@
 import UIKit
 
 class AgencyFormFourPageTwoEnglishViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var signatureViewOne: UIView!
+    @IBOutlet weak var signatureViewTwo: UIView!
     
+       override func viewDidLoad() {
+         super.viewDidLoad()
+                  scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                                scrollView.minimumZoomScale = 1
+                                scrollView.maximumZoomScale = 3
+                                scrollView.bounces=false
+                                self.view.addSubview(scrollView)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+                                imageView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+                                imageView.contentMode = .scaleToFill
+                                scrollView.addSubview(imageView)
+                                scrollView.addSubview(signatureViewOne)
+                                scrollView.addSubview(signatureViewTwo)
+                                scrollView.bringSubviewToFront(imageView)
+                                scrollView.bringSubviewToFront(signatureViewOne)
+                                scrollView.bringSubviewToFront(signatureViewTwo)
+         
+                 let firstField:UITextField = {
+                     let textField = UITextField(frame: CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0))
+                     textField.translatesAutoresizingMaskIntoConstraints = false
+                     textField.placeholder = "First Name"
+                     textField.keyboardType = UIKeyboardType.default
+                     textField.returnKeyType = UIReturnKeyType.done
+                     textField.autocorrectionType = UITextAutocorrectionType.no
+                     textField.font = UIFont.systemFont(ofSize: 13)
+                     textField.borderStyle = UITextField.BorderStyle.roundedRect
+                     textField.clearButtonMode = UITextField.ViewMode.whileEditing;
+                     textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+                     return textField
+                 }()
+            
+             }
+             
+             func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
+             {
+                  return imageView
+             }
+     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+     }
+     @IBAction func onSubmit(_ sender: Any) {
+         let screenshot = self.view.takeScreenshotFourteen()
+                         UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                         
+                     }
+                     
+                     
+             @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {           if let error = error {
+                         let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                         ac.addAction(UIAlertAction(title: "OK", style: .default))
+                         present(ac, animated: true)}
+                     else {
+                         }
+                     }
+         }
+                 extension UIView {
+                         func takeScreenshotFourteen() -> UIImage {
+                         drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                         let image = UIGraphicsGetImageFromCurrentImageContext()
+                         UIGraphicsEndImageContext()
+                         if image != nil {
+                             return image!
+                         }
+                         return UIImage()
+                         
+                     }
+     }
+     

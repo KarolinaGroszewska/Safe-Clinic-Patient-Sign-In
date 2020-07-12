@@ -62,6 +62,33 @@ class AgencyFormFiveEnglishViewController: UIViewController, UITextFieldDelegate
            return true
         }
         
+    @IBAction func onSubmit(_ sender: Any) {
+        let screenshot = self.view.takeScreenshotNine()
+                               UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                               
+                           }
+                           
+                           
+                   @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {           if let error = error {
+                               let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+                               ac.addAction(UIAlertAction(title: "OK", style: .default))
+                               present(ac, animated: true)}
+                           else {
+                               }
+                           }
+               }
+                       extension UIView {
+                               func takeScreenshotNine() -> UIImage {
+                               drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+                               let image = UIGraphicsGetImageFromCurrentImageContext()
+                               UIGraphicsEndImageContext()
+                               if image != nil {
+                                   return image!
+                               }
+                               return UIImage()
+                               
+                           }
+           }
     
 
     /*
@@ -74,4 +101,3 @@ class AgencyFormFiveEnglishViewController: UIViewController, UITextFieldDelegate
     }
     */
 
-}
