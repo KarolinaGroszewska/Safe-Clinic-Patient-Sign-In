@@ -45,7 +45,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(signatureView)
         
         let firstField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 170.0, y:190.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 170.0, y:190.0, width: 170.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "First Name"
             textField.keyboardType = UIKeyboardType.default
@@ -62,7 +62,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(firstField)
         
         let dateField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 120.0, y:140.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 120.0, y:140.0, width: 120.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Date"
             textField.keyboardType = UIKeyboardType.default
@@ -79,7 +79,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(dateField)
         
         let lastField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 360.0, y:190.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 360.0, y:190.0, width: 200.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Last Name"
             textField.keyboardType = UIKeyboardType.default
@@ -96,7 +96,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(lastField)
         
         let genderField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 135.0, y:255.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 135.0, y:255.0, width: 130.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Gender"
             textField.keyboardType = UIKeyboardType.default
@@ -113,7 +113,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(genderField)
         
         let pronounField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 410.0, y:255.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 410.0, y:255.0, width: 200.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Pronouns"
             textField.keyboardType = UIKeyboardType.default
@@ -130,7 +130,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(pronounField)
         
         let addressField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 195.0, y:303.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 195.0, y:303.0, width: 160.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Address"
             textField.keyboardType = UIKeyboardType.default
@@ -147,7 +147,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(addressField)
         
         let cityField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 370.0, y:303.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 390.0, y:303.0, width: 80.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "City"
             textField.keyboardType = UIKeyboardType.default
@@ -198,7 +198,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(zipField)
         
         let phoneField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 210.0, y:370.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 210.0, y:370.0, width: 150.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Phone"
             textField.keyboardType = UIKeyboardType.default
@@ -215,7 +215,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(phoneField)
         
         let birthField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 175.0, y:415.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 175.0, y:415.0, width: 150.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Birthday"
             textField.keyboardType = UIKeyboardType.default
@@ -249,7 +249,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(ageField)
         
         let raceField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 190.0, y:450.0, width: 100.0, height: 25.0))
+            let textField = UITextField(frame: CGRect(x: 190.0, y:450.0, width: 200.0, height: 25.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Race"
             textField.keyboardType = UIKeyboardType.default
@@ -266,7 +266,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(raceField)
         
         let ssnField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 240.0, y:480.0, width: 100.0, height: 25.0))
+            let textField = UITextField(frame: CGRect(x: 240.0, y:480.0, width: 200.0, height: 25.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "SSN"
             textField.keyboardType = UIKeyboardType.default
@@ -300,7 +300,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(assaultDateField)
         
         let locationField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 325.0, y:540.0, width: 100.0, height: 25.0))
+            let textField = UITextField(frame: CGRect(x: 325.0, y:540.0, width: 300.0, height: 25.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Assault Location"
             textField.keyboardType = UIKeyboardType.default
@@ -318,7 +318,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         
         
         let emergencyContactField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 205.0, y:670.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 205.0, y:670.0, width: 300.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Emergency Contact"
             textField.keyboardType = UIKeyboardType.default
@@ -335,7 +335,7 @@ class ClinicFormEnglishViewController: UIViewController, MFMailComposeViewContro
         scrollView.bringSubviewToFront(emergencyContactField)
         
         let emergencyPhoneField:UITextField = {
-            let textField = UITextField(frame: CGRect(x: 300.0, y:700.0, width: 100.0, height: 30.0))
+            let textField = UITextField(frame: CGRect(x: 300.0, y:700.0, width: 205.0, height: 30.0))
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.placeholder = "Emergency Phone"
             textField.keyboardType = UIKeyboardType.default

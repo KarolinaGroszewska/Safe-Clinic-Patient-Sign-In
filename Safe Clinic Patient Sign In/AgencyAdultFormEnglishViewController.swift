@@ -559,11 +559,37 @@ class AgencyAdultFormEnglishViewController: UIViewController, UITextFieldDelegat
          scrollView.addSubview(phoneCellField)
          scrollView.bringSubviewToFront(phoneCellField)
         
+//         let unchecked = UIImage(named: "unchecked") as UIImage?
+//         let checked = UIImage(named: "checked") as UIImage?
+        
+        
+//         let firstButton: UIButton = {
+//             let button   = UIButton(type: UIButton.ButtonType.custom) as UIButton
+//             button.frame = CGRect(x: 290.0, y:105.0, width: 100.0, height: 30.0)
+//             button.setImage(unchecked, for: .normal)
+//             button.setImage(checked, for: .selected)
+//             button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+//             button.setTitle("First", for: .normal)
+//             button.setTitle("Test", for: .highlighted)
+//             return button
+//         }()
+//         scrollView.addSubview(firstButton)
+//         scrollView.bringSubviewToFront(firstButton)
+        
         
    }
 
     
-        
+//        @objc func buttonAction(_ sender: UIButton) {
+//            sender.isSelected = !sender.isSelected
+//
+//            if sender.isSelected {
+//                dict[sender.title(for: .normal) ?? ""] = sender.title(for: .highlighted) ?? ""
+//            }
+//            else {
+//                dict[sender.title(for: .normal) ?? ""] = ""
+//            }
+//        }
         func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView?
         {
              return image
