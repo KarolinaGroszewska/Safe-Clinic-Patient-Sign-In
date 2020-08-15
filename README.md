@@ -1,10 +1,3 @@
-# Safe-Clinic-Patient-Sign-In
-
-
-
-
-
-This app was built to run on Swift 5 and iOS 13, and has been tested most with those configurations, though no issues on any other configurations have been found so far.
 
 ## Safe Clinic Patient Sign In
 
