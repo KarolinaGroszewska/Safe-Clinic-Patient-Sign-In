@@ -1,9 +1,11 @@
 # Safe-Clinic-Patient-Sign-In
 
-Safe Clinic Patient Sign In is an app designed for the Nashville Sexual Assault Center that helps with patient intake paperwork. 
+The Safe Clinic Patient Sign In app was created for the Sexual Assault Center (SAC), a non-profit organization in Nashville, TN. 
 
-The app is designed to collect basic demographic information from incoming patients, including their signatures which are placed on the documents by writing with a finger, and have that information easily stored on a secure Google Firebase database for SAC staff to filter.
+The project helps both the staff and visitors of the SAC with completing all of the necessary incoming patient paperwork. Instead of having to fill out and sign individual forms, Safe Clinic Patient Sign In allows for them to have all of the forms for various clients coming in available in one location. After selecting their preferred language and location, the client is lead through all of the paperwork necessary for their visit, which is entirely editable, and includes checkboxes for selection menus, text fields for personal information, and the ability to sign all spots where a signature would be required with a finger or stylus. 
 
-In order to run the app, download the entire file from github, and open the .xcworkspaces file found in the main folder to have access to the Firebase functionalities.
+All of the information that is then collected from the client is sent up to a secure database ran by Firebase. This allows for the staff members of the SAC to easily filter this information by specific patients, while granting them access to these records from any location with an internet connection.
 
-This app was built to run on Swift 5 and iOS 13, but it is compatible with earlier versions of IOS and easily converted to earlier or later versions of Swift.
+In order to run the app, download the entire file from github, and open the .xcworkspaces file found in the main folder. .xcworkspaces is the file that contains the firebase functionalities, required for access to all functions of the app. The app can be launched using xcode's built-in builder and runner, as long as the selected run file is "Safe Clinic Project Sign In".
+
+This app was built to run on Swift 5 and iOS 13, and has been tested most with those configurations, though no issues on any other configurations have been found so far.
