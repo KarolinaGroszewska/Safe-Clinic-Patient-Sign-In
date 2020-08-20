@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -202,26 +202,8 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-yb-BN0" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
-                                        <rect key="frame" x="657" y="962" width="91" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="onSubmit:" destination="P0b-6R-ysc" eventType="primaryActionTriggered" id="6za-Z2-gaj"/>
-                                            <segue destination="K2l-cU-bQW" kind="show" id="2mV-HL-sfc"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-gD-7ei" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="962" width="91" height="42"/>
+                                        <rect key="frame" x="20" y="890" width="91" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
@@ -241,6 +223,24 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
                                         <rect key="frame" x="201" y="849" width="449" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-yb-BN0" customClass="RoundButton" customModule="Safe_Clinic_Patient_Sign_In" customModuleProvider="target">
+                                        <rect key="frame" x="658" y="890" width="91" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.10980392160000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSubmit:" destination="P0b-6R-ysc" eventType="primaryActionTriggered" id="6za-Z2-gaj"/>
+                                            <segue destination="K2l-cU-bQW" kind="show" id="2mV-HL-sfc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="SP7-Ec-YUG"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ApU-Zh-UfK"/>
@@ -3011,9 +3011,9 @@ Esta aplicación lo guiará a través de la finalización de los formularios int
         <segue reference="BdG-oA-VB5"/>
         <segue reference="AJD-Oy-T5C"/>
         <segue reference="1dh-f9-EEI"/>
-        <segue reference="9yB-X9-jFe"/>
-        <segue reference="Hsa-yO-1mm"/>
-        <segue reference="zb5-5d-cxl"/>
+        <segue reference="5Pe-HA-lw6"/>
+        <segue reference="44Q-3T-44y"/>
+        <segue reference="y3g-vB-MIT"/>
         <segue reference="zKc-og-f0t"/>
     </inferredMetricsTieBreakers>
     <resources>

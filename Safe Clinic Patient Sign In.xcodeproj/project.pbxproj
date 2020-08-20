@@ -172,7 +172,6 @@
 			children = (
 				8520A25524BA54B00051BCA5 /* GoogleService-Info.plist */,
 				4A3660D224B9390100BAA48F /* Safe Clinic Patient Sign In */,
-				4A3660D124B9390100BAA48F /* Products */,
 				201EF910A908FFA60CB4096A /* Pods */,
 				8642470FFBA1C9169B6BFD11 /* Frameworks */,
 			);
@@ -184,11 +183,13 @@
 				4A3660D024B9390100BAA48F /* Safe Clinic Patient Sign In.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4A3660D224B9390100BAA48F /* Safe Clinic Patient Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				4A3660D124B9390100BAA48F /* Products */,
 				4A3660D324B9390100BAA48F /* AppDelegate.swift */,
 				4A3660D524B9390100BAA48F /* SceneDelegate.swift */,
 				4A3660D924B9390100BAA48F /* Main.storyboard */,
